@@ -2,8 +2,8 @@
 <html class="page" lang="ru">
    <head>
       <meta charset="utf-8">
-      <title class="main-title"> Гостиницы | Букинг-агентство «Седона»</title>
-      <link rel="stylesheet" href="css/styleee.css">
+      <title> Гостиницы | Букинг-агентство «Седона»</title>
+      <link rel="stylesheet" href="css/style.css">
    </head>
    <body class="page-body">
       <div class="container">
@@ -11,7 +11,7 @@
             <a class="page-header__logo">
             <img class="page-header__logo-image" src="img/logo-mobile.svg" alt="Логотип Седоны"></a>
             <nav class="main-nav">
-               <button class="main-nav__toggle" type="button"><span class="visually-hidden">открыть меню</span></button>
+               <button class="main-nav__toggle" type="button" aria-label="Open"><span class="visually-hidden">открыть меню</span></button>
                <div class="main-nav__wrapper">
                   <ul class="main-nav__list site-list">
                      <li class="site-list__item"><a class="site-list__link" href="blank.html">информация</a></li>
@@ -23,7 +23,7 @@
             </nav>
          </header>
          <main class="form-main">
-            <section class="form-main__promo">
+            <section class="form-main__intro">
                <div class="form-main__img-wrapper">
                   <img class="form-main__img" src="img/welcome.png" alt="Sedona">
                </div>
@@ -33,30 +33,32 @@
             <section class="user-information">
                <h2 class="visually-hidden">Данные о пользователе</h2>
                <form class="filter-menu" action="https://echo.htmlacademy.ru" method="post">
-                  <ul class="user-information__list">
-                     <li class="user-information__item">
-                        <label class="user-information__label" for="name">имя*:</label>
-                        <input class="user-information__field" type="text" id="name" placeholder="Петр">
-                     </li>
-                     <li class="user-information__item">
-                        <label class="user-information__label" for="surname">фамилия*:</label>
-                        <input class="user-information__field" type="text" id="surname" placeholder="Иванов">
-                     </li>
-                     <li class="user-information__item">
-                        <label class="user-information__label" for="patronymic">отчество:</label>
-                        <input class="user-information__field" type="text" id="patronymic" placeholder="Александрович">
-                     </li>
-                  </ul>
+                  <fieldset>
+                     <ul class="user-information__list">
+                        <li class="user-information__item">
+                           <label class="user-information__label" for="name">имя*:</label>
+                           <input class="user-information__field" type="text" id="name" placeholder="Петр">
+                        </li>
+                        <li class="user-information__item">
+                           <label class="user-information__label" for="surname">фамилия*:</label>
+                           <input class="user-information__field" type="text" id="surname" placeholder="Иванов">
+                        </li>
+                        <li class="user-information__item">
+                           <label class="user-information__label" for="patronymic">отчество:</label>
+                           <input class="user-information__field" type="text" id="patronymic" placeholder="Александрович">
+                        </li>
+                     </ul>
+                  </fieldset>
                </form>
             </section>
             <section class="contact-information">
                <h2 class="visually-hidden">Контактные данные пользователя</h2>
-               <form class="filter-menu" action="https://echo.htmlacademy.ru" method="post">
+               <fieldset>
                   <ul class="contact-information__list">
                      <li class="contact-information__item">
                         <label class="contact-information__label" for="tel">контактный телефон*:</label>
                         <input class="contact-information__field tel" type="text" id="tel" placeholder="Введите телефон">
-                        <button class="tel-icon" type="button">
+                        <button class="tel-icon" type="button" aria-label="Tap">
                            <svg class="tel-icon__img" aria-label="Иконка телефона">
                            </svg>
                         </button>
@@ -64,45 +66,67 @@
                      <li class="contact-information__item">
                         <label class="contact-information__label" for="e-mail">электронная почта*:</label>
                         <input class="contact-information__field e-mail" type="text" id="e-mail" placeholder="Введите e-mail">
-                        <button class="mail-icon" type="button">
+                        <button class="mail-icon" type="button" aria-label="Tap">
                            <svg class="mail-icon__img" aria-label="Иконка электронной почты">
                            </svg>
                         </button>
                      </li>
                   </ul>
-               </form>
+               </fieldset>
             </section>
             <section class="estimate-information">
                <h2 class="visually-hidden">Отзыв</h2>
-               <form class="filter-menu" action="https://echo.htmlacademy.ru" method="post">
-                  <input class="estimate-information__checkbox" type="checkbox" id="positive-estimate" checked>
-                  <label class="estimate-information__label" for="positive-estimate">Скорее положительное</label>
-                  <input class="estimate-information__checkbox" type="checkbox" id="negative-estimate">
-                  <label class="estimate-information__label" for="negative-estimate">Скорее отрицательное</label>
-                  <input class="estimate-information__checkbox" type="checkbox" id="difficult-estimate">
-                  <label class="estimate-information__label" for="difficult-estimate">Затрудняюсь ответить</label>
-               </form>
+               <fieldset>
+                  <ul class="estimate-information__list">
+                     <li class="estimate-information__item">
+                        <input class="estimate-information__checkbox" type="checkbox" name="positive-estimate" id="positive-estimate" checked>
+                        <label class="estimate-information__label" for="positive-estimate">Скорее положительное</label>
+                     </li>
+                     <li class="estimate-information__item">
+                        <input class="estimate-information__checkbox" type="checkbox" name="negative-estimate" id="negative-estimate">
+                        <label class="estimate-information__label" for="negative-estimate">Скорее отрицательное</label>
+                     </li>
+                     <li class="estimate-information__item">
+                        <input class="estimate-information__checkbox" type="checkbox" name="difficult-estimate" id="difficult-estimate">
+                        <label class="estimate-information__label" for="difficult-estimate">Затрудняюсь ответить</label>
+                     </li>
+                  </ul>
+               </fieldset>
             </section>
             <section class="visited-place">
                <h2 class="visually-hidden">Посещенные места</h2>
-               <form class="filter-menu" action="https://echo.htmlacademy.ru" method="post">
-                  <input class="visited-place__checkbox" type="checkbox" id="devil-bridge" checked>
-                  <label class="visited-place__label" for="devil-bridge">Мост Дьявола</label>
-                  <input class="visited-place__checkbox" type="checkbox" id="mountain" checked>
-                  <label class="visited-place__label" for="mountain">Гора-Колокол</label>
-                  <input class="visited-place__checkbox" type="checkbox" id="park" checked>
-                  <label class="visited-place__label" for="park">Слайд-парк</label>
-                  <input class="visited-place__checkbox" type="checkbox" id="rock">
-                  <label class="visited-place__label" for="rock">Красные скалы</label>
-               </form>
+               <fieldset>
+                  <ul class="visited-place__list">
+                     <li class="visited-place__item">
+                        <input class="visited-place__checkbox" type="checkbox" name="devil-bridge"  id="devil-bridge" checked>
+                        <label class="visited-place__label" for="devil-bridge">Мост Дьявола</label>
+                     </li>
+                     <li class="visited-place__item">
+                        <input class="visited-place__checkbox" type="checkbox" name="mountain"  id="mountain" checked>
+                        <label class="visited-place__label" for="mountain">Гора-Колокол</label>
+                     </li>
+                     <li class="visited-place__item">
+                        <input class="visited-place__checkbox" type="checkbox" name="park"  id="park" checked>
+                        <label class="visited-place__label" for="park">Слайд-парк</label>
+                     </li>
+                     <li class="visited-place__item">
+                        <input class="visited-place__checkbox" type="checkbox" name="rock" id="rock">
+                        <label class="visited-place__label" for="rock">Красные скалы</label>
+                     </li>
+                  </ul>
+               </fieldset>
             </section>
             <section class="emotion-information">
                <h2 class="visually-hidden">Описание эмоций</h2>
-               <form class="filter-menu" action="https://echo.htmlacademy.ru" method="post">
-                  <label class="emotion-information__label" for="emotion">опишите свои эмоции:</label>
-                  <input class="emotion-information__field tel" type="text" id="emotion" placeholder="Опишите подробно все свои восторги">
-                  <button class="comment-button" type="submit">отправить отзыв</button>
-               </form>
+               <fieldset>
+                  <ul class="emotion-information__list">
+                     <li class="emotion-information__item">
+                        <label class="emotion-information__label" for="emotion">опишите свои эмоции:</label>
+                        <textarea class="emotion-information__field tel" id="emotion" placeholder="Опишите подробно все свои восторги"></textarea>
+                        <button class="comment-button" type="submit" aria-label="Submit">отправить отзыв</button>
+                     </li>
+                  </ul>
+               </fieldset>
             </section>
          </main>
          <footer class="page-footer">
