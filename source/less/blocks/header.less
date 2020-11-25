@@ -1,0 +1,101 @@
+
+.page-header__logo-image {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  transform: translateX(-50%);
+  background-color: transparent;
+  z-index: 2;
+  width: 102px;
+  height: 84px;
+}
+
+.main-nav__list {
+  background-color: @blue;
+  list-style: none;
+}
+
+.site-list__link {
+  text-decoration: none;
+  color: @white;
+}
+
+.main-nav {
+  position: relative;
+  padding-bottom: 56px;
+
+}
+
+.site-list__item {
+  color: @white;
+  text-align: center;
+  background-color: @blue;
+}
+
+.site-list__link {
+  display: block;
+  padding: 8px 20px 7px;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 40px;
+}
+
+.site-list__item:last-child .site-list__link {
+  box-shadow: 0 -7px 7px -7px fade(@black, 20%) inset;
+}
+
+.main-nav__toggle {
+  position: absolute;
+  top: 3px;
+  right: 7px;
+  width: 50px;
+  height: 50px;
+  padding: 0;
+  border: 0;
+  background-color: transparent;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 11px;
+    width: 28px;
+    height: 4px;
+    background-color: @white;
+  }
+
+  &::before {
+    transform: translateY(-50%) rotate(45deg);
+  }
+
+  &::after {
+    transform: translateY(-50%) rotate(-45deg);
+  }
+
+  &--off {
+    &::before {
+      content: "";
+      position: absolute;
+      top: 13px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 23px;
+      height: 4px;
+      background-color: @blue;
+      box-shadow: 0 9px 0 0 @blue, 0 18px 0 0 @blue;
+    }
+
+    &::after {
+      display: none;
+    }
+  }
+}
+
+.main-nav__toggle {
+  display: none;
+}
+
+
+
+

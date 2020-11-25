@@ -1,0 +1,36 @@
+.search-hotel__button {
+  display: block;
+  box-sizing: border-box;
+  border: 3px solid @blue;
+  font: inherit;
+  font-size: 21px;
+  font-weight: 700;
+  color: @white;
+  line-height: 26px;
+  text-align: center;
+  text-transform: inherit;
+  text-decoration: none;
+  background-color: @blue;
+
+  &:hover {
+    border-color: @blue-hover;
+    background-color: @blue-hover;
+  }
+
+  &:active {
+    color: fade(@white, 30%);
+    border-color: @blue;
+    background-color: @blue;
+  }
+
+  &:focus {
+    border-color: @blue-hover;
+    outline: 0;
+  }
+
+  &:disabled {
+    border-color: @blue-down;
+    background-color: @blue-down;
+  }
+}
+
