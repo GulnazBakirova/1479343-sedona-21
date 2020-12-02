@@ -65,7 +65,14 @@
 }
 
 .site-list {
+  display: flex;
+  flex-direction: column;
   background-color: @blue;
+
+    @media @tablet {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
 }
 
 .site-list__item {
@@ -112,12 +119,6 @@
   background-color: @blue;
   background-image: url("../img/back-mobile.png");
   background-size: image-size("../img/back-mobile.png");
-
-  @media @tablet {
-    padding-top: 95px;
-    min-height: 195px;
-    background-image: url("../img/back-tablet.png");
-    background-size: cover;
 }
 
 .intro__img-wrapper::after {
