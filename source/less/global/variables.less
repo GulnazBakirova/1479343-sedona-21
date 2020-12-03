@@ -1,11 +1,35 @@
+/* ========= Base colors ======== */
+
 @black: #000000;
 @white: #ffffff;
 @blue: #81B3D2;
 @gray: #EEEEEE;
+@light-gray: #d6d6d6;
 
-@blue-hover: 669EC0;
-@blue-down: 5496BD;
-@main-menu-active: 766357;
-@main-menu-hover: 604E43;
+/* ========= HOVER and ACTIVE ======== */
+
+@blue-hover: #669EC0;
+@blue-down: #5496BD;
+@main-menu-active: #766357;
+@main-menu-hover: #604E43;
 
 
+
+@video-icon: #5c6870;
+@bg-color-body: #f2f2f2;
+@dark-gray: #333333;
+
+
+/* ========= Viewports ======== */
+
+@mobile-width: 320px;
+@tablet-width: 768px;
+@desktop-width: 1200px;
+
+@tablet-max-width: (@desktop-width - 1);
+
+@mobile: ~"(min-width: @{mobile-width})";
+@tablet: ~"(min-width: @{tablet-width})";
+@desktop: ~"(min-width: @{desktop-width})";
+
+@tablet-only: ~"(max-width: @{tablet-max-width})";
