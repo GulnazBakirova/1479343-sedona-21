@@ -1,0 +1,189 @@
+/* ========= картинки ======== */
+
+
+.photo__title {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 24px;
+  text-transform: uppercase;
+  text-align: left;
+}
+
+.photo__author {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  text-align: left;
+}
+
+.button-like {
+  float: left;
+  border: none;
+  background-color: @white;
+}
+
+.photo__like-count {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 24px;
+  text-align: left;
+}
+
+
+
+.photo {
+  position: relative;
+  padding: 22px 6.25% 21px;
+  border-bottom: 1px solid @basic-gray;
+
+  @media @tablet {
+    padding: 0;
+    width: 50%;
+    border-bottom: none;
+    background-color: @bg-color-photo;
+  }
+
+  @media @desktop {
+    width: 33.333333%;
+  }
+
+  &:nth-of-type(odd):not(:first-of-type) {
+    @media @tablet {
+      background-color: @bg-color-photo;
+    }
+  }
+
+  &--full {
+    border-top: 1px solid @basic-gray;
+
+    @media @tablet {
+      width: 100%;
+      border-top: none;
+    }
+
+    @media @desktop {
+      width: 100%;
+    }
+  }
+}
+
+.photo__link {
+  display: block;
+}
+
+.photo__image {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.photo__information {
+  padding-top: 15px;
+  line-height: 24px;
+
+  @media @tablet {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 20px;
+  }
+
+  @media @desktop {
+    position: absolute;
+    z-index: 10;
+    bottom: 0;
+    width: ~"calc(100% - 20px * 2)";
+    color: @white;
+    background-color: fade(@black, 30%);
+  }
+}
+
+.photo__description {
+  @media @tablet {
+    max-width: 75%;
+  }
+}
+
+.photo__title {
+  margin: 0;
+  font-size: 14px;
+  font-weight: 700;
+  color: @black;
+
+  @media @desktop {
+    color: @white;
+  }
+}
+
+.photo__author {
+  margin: 0;
+  text-transform: none;
+}
+
+.photo__likes {
+  display: flex;
+  align-items: center;
+  padding-top: 4px;
+
+  @media @tablet {
+    padding-top: 0;
+    width: 65px;
+  }
+}
+
+.photo__like-count {
+  align-self: flex-end;
+  margin-left: 13px;
+  font-weight: 700;
+  color: @black;
+  line-height: 14px;
+
+  @media @tablet {
+    align-self: auto;
+    margin-left: 9px;
+  }
+
+  @media @desktop {
+    color: @white;
+  }
+}
+
+.button-like__icon {
+  fill: @black;
+
+    @media @desktop {
+    fill: @white;
+    background-color: transparent;
+  }
+}
+
+.button-like {
+    @media @desktop {
+    background-color: transparent;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+.photo-grid {
+  @media @desktop {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  white-space: nowrap;
+  height: 267px;
+  width: 400px;
+  }
+}
+
+
