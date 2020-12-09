@@ -1,5 +1,17 @@
 /* ====== Основные ====== */
 
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.container {
+  margin: 0 auto;
+  min-width: 320px;
+  max-width: 1200px;
+  background-color: @white;
+}
+
 .page-body {
   margin: 0;
   padding: 0;
@@ -8,6 +20,7 @@
   font-family: "PT Sans", Arial, sans-serif;
   text-align: center;
   color: @black;
+  background-color: @main-background;
 }
 
 .page-header,
@@ -15,7 +28,7 @@
 .page-footer,
 .form-main,
 .catalog-main {
-  width: 320px;
+  min-width: @mobile-width;
   margin: 0 auto;
   background-color: @white;
 }
@@ -43,4 +56,11 @@
 .page-header__logo-imag,
 .features__img {
   background-color: @gray;
+}
+
+.page-header {
+    @media @desktop {
+    color: @black;
+    background-color: @white;
+  }
 }
