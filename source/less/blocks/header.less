@@ -26,9 +26,15 @@
   line-height: 40px;
   color: @white;
   @media @desktop {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
     color: @black;
   }
   @media @tablet {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
     color: @black;
   }
 }
@@ -178,44 +184,42 @@
   display: block;
 }
 
-.man-nav {
-  @media @tablet {
-    height: 56px;
-  }
-  @media @desktop {
-    height: 56px;
-  }
-}
-
 .site-list__item {
   color: @white;
   text-align: center;
   background-color: @blue;
+
   @media @tablet {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
     line-height: 26px;
     box-sizing: border-box;
-    padding-top: 14px;
-    padding-bottom: 16px;
     width: 25%;
     color: @black;
     background-color: @white;
   }
+
   @media @desktop {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
     line-height: 26px;
     box-sizing: border-box;
-    padding-top: 14px;
-    padding-bottom: 16px;
     width: 25%;
     color: @black;
     background-color: @white;
   }
+
   &:not(&--active):hover {
     background-color: @blue-hover;
   }
+
   &:not(&--active):active {
     color: fade(@white, 30%);
     background-color: @blue;
   }
+
   &--active {
     color: fade(@white, 60%);
   }
@@ -227,7 +231,11 @@
   font-size: 18px;
   font-weight: 700;
   line-height: 40px;
+
   @media @tablet {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
     padding: 15px 20px 15px;
     font-size: 14px;
     line-height: 26px;

@@ -1,5 +1,12 @@
 /* ====== Intro на главной странице ====== */
 
+.intro__img {
+  @media @desktop {
+  padding-top: 76px;
+  padding-bottom: 80px;
+}
+}
+
 .intro__img-wrapper {
   position: relative;
   padding-top: 51px;
@@ -10,17 +17,15 @@
   background-image: url("../img/back-mobile.png");
 
   @media @tablet {
-    padding-top: 95px;
-    min-height: 195px;
+    height: 518px;
     background-image: url("../img/back-tablet1x.jpg");
     background-size: cover;
   }
 
   @media @desktop {
-    padding-top: 103px;
-    min-height: 198px;
-    background-image: url("../img/back-desktop1x.jpg");
-    background-size: image-size("../img/back-desktop1x.jpg");
+    position: relative;
+    min-height: 518px;
+    background-image: url("../img/back-desktop1x.jpg") no-repeat 50% 21%;
   }
 }
 
@@ -31,7 +36,7 @@
   left: 0;
   width: 100%;
   height: 57px;
-  background: url("../img/intro-triangle.svg") no-repeat 50% 50%;
+  background: url("../img/intro-triangle.svg") no-repeat 50% 20%;
 
   @media @tablet {
       width: 100%;
