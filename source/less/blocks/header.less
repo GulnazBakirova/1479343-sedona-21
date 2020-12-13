@@ -26,9 +26,15 @@
   line-height: 40px;
   color: @white;
   @media @desktop {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
     color: @black;
   }
   @media @tablet {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
     color: @black;
   }
 }
@@ -62,17 +68,26 @@
     padding-bottom: 0;
     background-color: @white;
   }
+    @media @desktop {
+    padding-bottom: 0;
+    background-color: @white;
+  }
 }
 
 .page-header__logo {
   position: absolute;
   z-index: 10;
   left: 50%;
-  bottom: auto;
+  padding-top: 224px;
   transform: translateX(-50%);
 
   @media @tablet {
     bottom: auto;
+    padding-top: 0;
+  }
+    @media @desktop {
+    bottom: auto;
+    padding-top: 0;
   }
 }
 
@@ -86,6 +101,9 @@
   height: 50px;
   cursor: pointer;
   border: none;
+  margin-top: 224px;
+  color: @blue;
+  background-color: @white;
   &:hover,
   &:active {
     background-color: @blue;
@@ -97,15 +115,17 @@
 }
 
 .main-nav--closed .main-nav__toggle::before {
-  content: "";
-  position: absolute;
-  top: 15px;
-  left: 17px;
-  width: 36px;
-  height: 2px;
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 11px;
+    width: 28px;
+    height: 4px;
+    background-color: @white;
   color: @blue;
   background-color: @white;
   box-shadow: 0 8px 0 0 @white, 0 16px 0 0 @white;
+
 }
 
 .main-nav--closed .main-nav__toggle:active::before {
@@ -113,18 +133,24 @@
   box-shadow: 0 8px 0 0 fade(@white, 30%), 0 16px 0 0 fade(@white, 30%);
 }
 
+
+
+/* ========= не резиновая верстка left 450px как сделать в процентаже ======== */
+
 .main-nav--opened .main-nav__toggle {
   top: 0;
   right: auto;
   left: 0;
+  margin-top: 0px;
   &::before,
   &::after {
-    content: "";
-    position: absolute;
-    top: 24px;
-    left: 18px;
-    width: 36px;
-    height: 2px;
+      content: "";
+      position: absolute;
+      top: 25px;
+      left: 450px;
+      transform: translateX(-50%);
+      width: 28px;
+      height: 4px;
     background-color: @white;
   }
   &::before {
@@ -157,9 +183,22 @@
   left: 0;
   z-index: 2;
   width: 7px;
-  height: 100%;
+
   box-shadow: inset 4px 0 7px -2px fade(@black, 40%);
 }
+
+.main-nav__toggle {
+  position: absolute;
+  top: 3px;
+  right: 7px;
+  width: 50px;
+  height: 50px;
+  padding: 0;
+  border: 0;
+  background-color: transparent;
+
+}
+
 
 .main-nav--nojs .main-nav__toggle {
   display: none;
@@ -178,46 +217,64 @@
   display: block;
 }
 
-.man-nav {
-  @media @tablet {
-    height: 56px;
-  }
-  @media @desktop {
-    height: 56px;
-  }
-}
+
+
+
+
+
+
+
+
 
 .site-list__item {
   color: @white;
   text-align: center;
   background-color: @blue;
-  @media @tablet {
-    line-height: 26px;
-    box-sizing: border-box;
-    padding-top: 14px;
-    padding-bottom: 16px;
-    width: 25%;
-    color: @black;
-    background-color: @white;
-  }
-  @media @desktop {
-    line-height: 26px;
-    box-sizing: border-box;
-    padding-top: 14px;
-    padding-bottom: 16px;
-    width: 25%;
-    color: @black;
-    background-color: @white;
-  }
+
   &:not(&--active):hover {
     background-color: @blue-hover;
   }
+
   &:not(&--active):active {
     color: fade(@white, 30%);
     background-color: @blue;
   }
+
   &--active {
     color: fade(@white, 60%);
+  }
+}
+
+.site-list__item {
+  @media @tablet {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 26px;
+    box-sizing: border-box;
+    width: 25%;
+    color: @black;
+    background-color: @white;
+
+  &:not(&--active):hover {
+    background-color: @white;
+  }
+
+  &:not(&--active):active {
+    color: inherit;
+    background-color: @white;
+  }
+  }
+
+  @media @desktop {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 26px;
+    box-sizing: border-box;
+    width: 25%;
+    color: @black;
+    background-color: @white;
   }
 }
 
@@ -227,8 +284,22 @@
   font-size: 18px;
   font-weight: 700;
   line-height: 40px;
+
   @media @tablet {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
     padding: 15px 20px 15px;
+    font-size: 14px;
+    line-height: 26px;
+  }
+
+    @media @desktop {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    margin-top: -8px;
+    margin-bottom: -10px;
     font-size: 14px;
     line-height: 26px;
   }
@@ -239,4 +310,58 @@
   @media @tablet {
     box-shadow: none;
   }
+}
+
+li.site-list__item.left {
+  @media @tablet {
+  text-align: left;
+}
+  @media @desktop {
+  text-align: left;
+}
+}
+
+li.site-list__item.right {
+  @media @tablet {
+  text-align: right;
+}
+  @media @desktop {
+  text-align: right;
+}
+}
+
+.main-nav li:nth-child(1) a {
+  @media @desktop {
+  margin-left: 73px;
+}
+}
+
+.main-nav li:nth-child(2) a {
+  @media @desktop {
+  margin-left: -7px;
+}
+}
+
+.main-nav li:nth-child(3) a {
+  @media @desktop {
+  margin-right: -5px;
+}
+}
+
+.main-nav li:nth-child(4) a {
+  @media @desktop {
+  margin-right: 55px;
+}
+}
+
+
+.site-list__link {
+  &:not(&--active):hover {
+  @media @tablet {
+    color: @blue;
+  }
+    @media @desktop {
+    color: @blue;
+  }
+}
 }

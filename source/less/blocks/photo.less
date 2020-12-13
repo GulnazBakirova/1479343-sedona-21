@@ -41,13 +41,13 @@
 
   @media @tablet {
     padding: 0;
-    width: 50%;
+    width: 324px;
     border-bottom: none;
     background-color: @bg-color-photo;
   }
 
-  @media @desktop {
-    width: 33.333333%;
+    @media @desktop {
+    width: 400px;
   }
 
   &:nth-of-type(odd):not(:first-of-type) {
@@ -167,23 +167,24 @@
 }
 
 
-
-
-
-
-
-
-
-
-
 .photo-grid {
+    @media @tablet {
+    display: grid;
+    grid-template-columns: 324px 324px;
+    height: 267px;
+    margin-bottom: 500px;
+  }
   @media @desktop {
-  display: grid;
-  grid-template-rows: 1fr 1fr 1fr;
-  white-space: nowrap;
-  height: 267px;
-  width: 400px;
+    display: grid;
+    grid-template-columns: 400px 400px 400px;
+    height: 267px;
+    white-space: nowrap;
+    margin-bottom: 0px;
   }
 }
+
+
+
+
 
 
