@@ -16,10 +16,18 @@
   background-color: @blue;
   background-image: url("../img/back-mobile.png");
 
+      @media @retina {
+    background-image: url("../back-mobile2x.jpg");
+  }
+
   @media @tablet {
     height: 518px;
     background-image: url("../img/back-tablet1x.jpg");
     background-size: cover;
+
+            @media @retina {
+    background-image: url("../img/back-tablet2x.jpg");
+  }
   }
 
   @media @desktop {
@@ -27,8 +35,13 @@
     height: 518px;
     width: 1200px;
     background-image: url("../img/desktopintro.jpg") no-repeat 50% 21%;
+
+            @media @retina {
+    background-image: url("../img/back-desktop2x.jpg");
+  }
   }
 }
+
 
 .intro__img-wrapper::after {
   content: "";

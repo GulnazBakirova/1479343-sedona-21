@@ -10,6 +10,24 @@
 
 /* ====== Features ====== */
 
+
+.features-main {
+  @media @tablet {
+display: grid;
+grid-template-columns: 256px 512px;
+margin: auto;
+  }
+}
+
+.features-extra {
+  @media @tablet {
+display: grid;
+grid-template-columns: 512px 256px;
+margin: auto;
+  }
+}
+
+
 .features {
   position: relative;
   padding-top: 19px;
@@ -214,6 +232,11 @@
   margin-top: 1px;
   margin-left: -18px;
 
+    @media @tablet {
+  margin-top: 35px;
+  margin-left: -530px;
+}
+
   @media @desktop {
   margin-top: 35px;
   margin-left: -530px;
@@ -223,6 +246,14 @@
 .advantage-title--house {
   margin-top: -32px;
   margin-left: 30px;
+
+
+  @media @tablet {
+  margin-top: 30px;
+  margin-left: -200px;
+  font-size: 21px;
+  line-height: 21px;
+}
 
   @media @desktop {
   margin-top: 30px;
@@ -239,6 +270,8 @@
   @media @tablet {
   width: 185px;
   text-align: center;
+  margin-top: 25px;
+  margin-left: -200px;
 }
 
   @media @desktop {
@@ -267,6 +300,11 @@
   margin-top: 10px;
   margin-left: -15px;
 
+      @media @tablet {
+  margin-top: 33px;
+  margin-right: -70px;
+}
+
     @media @desktop {
   margin-top: 33px;
   margin-right: -70px;
@@ -276,6 +314,13 @@
 .advantage-title--souvenir {
   margin-top: -30px;
   margin-left: 30px;
+
+      @media @tablet {
+  margin-top: 30px;
+  margin-left: 145px;
+  font-size: 21px;
+  line-height: 21px;
+}
 
     @media @desktop {
   margin-top: 30px;
@@ -292,6 +337,8 @@
   @media @tablet {
   width: 193px;
   text-align: center;
+    margin-top: 21px;
+  margin-left: 80px;
 }
 
     @media @desktop {
@@ -320,6 +367,11 @@
   margin-top: 19px;
   margin-left: -19px;
 
+    @media @tablet {
+  margin-top: 37px;
+  margin-right: 17px;
+}
+
   @media @desktop {
   margin-top: 37px;
   margin-right: 17px;
@@ -329,6 +381,13 @@
 .advantage-title--food {
   margin-top: -30px;
   margin-left: 30px;
+
+       @media @tablet {
+  margin-top: 30px;
+  margin-left: 120px;
+  font-size: 21px;
+  line-height: 21px;
+}
 
      @media @desktop {
   margin-top: 30px;
@@ -345,6 +404,8 @@
   @media @tablet {
   width: 180px;
   text-align: center;
+    margin-top: 21px;
+  margin-left: -5px;
 }
 
   @media @desktop {
@@ -443,6 +504,13 @@
   border-bottom: 1px solid @light-gray;
 
   &:last-child {
+    border-bottom: none;
+  }
+
+  @media @tablet {
+    border-bottom: none;
+  }
+    @media @desktop {
     border-bottom: none;
   }
 }
@@ -567,29 +635,38 @@
 .search-hotel__button {
   display: block;
   box-sizing: border-box;
-  width: 280px;
-  margin-bottom: 50px;
-  margin-left: 20px;
   padding: 13px 10px;
+  border: 3px solid @blue;
   font: inherit;
   font-size: 21px;
   font-weight: 700;
+  color: @white;
   line-height: 26px;
+  text-align: center;
   text-transform: inherit;
   text-decoration: none;
-  text-align: center;
-  color: @white;
   background-color: @blue;
-  border: 3px solid @blue;
+  cursor: pointer;
+  width: 280px;
+     text-align: center;
+       margin-left: auto;
+    margin-right: auto;
+
 
   @media @tablet {
-  margin-left: 300px;
+  margin-top: 42px;
   width: 458px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
   }
 
   @media @desktop {
-  margin-left: 370px;
+  margin-top: 47px;
   width: 458px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
   }
 
   &:hover {
@@ -634,18 +711,30 @@
 .form-main__img-wrapper {
   position: relative;
   height: 214px;
-  background: @blue url("../img/back-desktop.png") no-repeat 50% 21%;
+  background: @blue url("../img/back-mobile.jpg") no-repeat 50% 21%;
+
+    @media @retina {
+    background-image: url("../img/form-mobile2x.jpg");
+  }
 
     @media @tablet {
     padding-top: 95px;
     background-image: url("../img/form-tablet.jpg");
     background-size: cover;
+
+      @media @retina {
+      background-image: url("../img/form-tablet2x.jpg");
+    }
   }
 
   @media @desktop {
     padding-top: 103px;
     background-image: url("../img/form-desktop.jpg");
     background-size: image-size("../img/form-desktop.jpg");
+
+        @media @retina {
+      background-image: url("../img/form-desktop2x.jpg");
+    }
   }
 }
 
@@ -706,16 +795,28 @@
   height: 214px;
   background: @blue url("../img/back-desktop.png") no-repeat 50% 21%;
 
+    @media @retina {
+    background-image: url("../photo-mobile2x.jpg");
+  }
+
     @media @tablet {
     padding-top: 95px;
     background-image: url("../img/form-tablet.jpg");
     background-size: cover;
+
+        @media @retina {
+    background-image: url("../img/photo-tablet2x.jpg");
+  }
   }
 
   @media @desktop {
     padding-top: 103px;
     background-image: url("../img/form-desktop.jpg");
     background-size: image-size("../img/form-desktop.jpg");
+
+        @media @retina {
+    background-image: url("../img/photo-desktop2x.jpg");
+  }
   }
 }
 
