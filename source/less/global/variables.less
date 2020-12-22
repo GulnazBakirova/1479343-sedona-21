@@ -29,8 +29,10 @@
 
 @tablet-max-width: (@desktop-width - 1);
 
+@retina-dpi: 144dpi;
+
 @mobile: ~"(min-width: @{mobile-width})";
 @tablet: ~"(min-width: @{tablet-width})";
 @desktop: ~"(min-width: @{desktop-width})";
 
-@tablet-only: ~"(max-width: @{tablet-max-width})";
+@retina: ~"(min-resolution: @{retina-dpi})";
