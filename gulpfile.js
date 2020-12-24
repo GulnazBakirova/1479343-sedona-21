@@ -4,6 +4,10 @@ const sourcemap = require("gulp-sourcemaps");
 const less = require("gulp-less");
 const postcss = require("gulp-postcss");
 const autoprefixer = require("autoprefixer");
+const imagemin = require('gulp-imagemin');
+const rename = require("rename");
+const webp = require("gulp-webp");
+const csso = require("postcss-csso");
 const sync = require("browser-sync").create();
 
 // Styles
@@ -15,6 +19,7 @@ const styles = () => {
     .pipe(less())
     .pipe(postcss([
       autoprefixer()
+      csso()
     ]))
     .pipe(sourcemap.write("."))
     .pipe(gulp.dest("source/css"))
@@ -49,3 +54,27 @@ const watcher = () => {
 exports.default = gulp.series(
   styles, server, watcher
 );
+
+
+// Оптимизация изображений
+
+const images = () => {
+ return gulp.src("source/img/**/*.{jpg,png,svg}")
+ .pipe(imagemin([
+ imagemin.optipng({optimizationLevel: 3}),
+ imagemin.jpegtran({progressive: true}),
+ imagemin.svgo()
+ ]))
+.pipe(gulp.dest("build/img"))
+}
+exports.images = images;
+
+
+// Конвертация изображений в WebP
+
+const createWebp = () => {
+ return gulp.src("source/img/**/*.{jpg,png}")
+ .pipe(webp({quality: 90}))
+ .pipe(gulp.dest("source/img"))
+}
+exports.createWebp = createWebp;

@@ -40,6 +40,11 @@
 }
 
 .page-header__logo {
+  position: absolute;
+  top: 45px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 50;
   width: 102px;
   height: 84px;
   @media @desktop {
@@ -76,146 +81,115 @@
 
 .page-header__logo {
   position: absolute;
-  z-index: 10;
+  z-index: 2;
   left: 50%;
-  padding-top: 224px;
+  padding-top: 175px;
   transform: translateX(-50%);
 
   @media @tablet {
     bottom: auto;
-    padding-top: 0;
+    margin-top: -220px;
   }
     @media @desktop {
     bottom: auto;
-    padding-top: 0;
+    margin-top: -220px;
   }
 }
 
+
+
 .main-nav__toggle {
   position: absolute;
-  top: 0;
-  right: 0;
-  z-index: 2;
+  bottom: 18px;
+  right: 20px;
+  z-index: 10;
   display: block;
-  width: 70px;
-  height: 50px;
-  cursor: pointer;
+  width: 24px;
+  height: 24px;
+  background-color: #ffffff;
   border: none;
-  margin-top: 224px;
-  color: @blue;
-  background-color: @white;
-  &:hover,
-  &:active {
-    background-color: @blue;
-    opacity: 0.3;
-  }
+  cursor: pointer;
+
   @media @tablet {
+    display: none;
+  }
+    @media @desktop {
     display: none;
   }
 }
 
 .main-nav--closed .main-nav__toggle::before {
-    content: "";
-    position: absolute;
-    top: 50%;
-    right: 11px;
-    width: 28px;
-    height: 4px;
-    background-color: @white;
-  color: @blue;
-  background-color: @white;
-  box-shadow: 0 8px 0 0 @white, 0 16px 0 0 @white;
-
-}
-
-.main-nav--closed .main-nav__toggle:active::before {
-  background-color: fade(@white, 30%);
-  box-shadow: 0 8px 0 0 fade(@white, 30%), 0 16px 0 0 fade(@white, 30%);
-}
-
-
-
-/* ========= не резиновая верстка left 450px как сделать в процентаже ======== */
-
-.main-nav--opened .main-nav__toggle {
-  top: 0;
-  right: auto;
-  left: 0;
-  margin-top: 0px;
-  &::before,
-  &::after {
-      content: "";
-      position: absolute;
-      top: 25px;
-      right: -800%;
-      transform: translateX(-50%);
-      width: 28px;
-      height: 4px;
-    background-color: @white;
-  }
-  &::before {
-    transform: rotate(45deg);
-    box-shadow: none;
-  }
-  &::after {
-    transform: rotate(-45deg);
-  }
-  &:active::before,
-  &:active::after {
-    background-color: fade(@white, 30%);
-  }
-}
-
-.main-nav--opened .main-nav__wrapper {
-  position: absolute;
-  top: 0;
-  right: 0;
-  left: 0;
-  z-index: 1;
-  height: 100%;
-  background-color: @blue;
-}
-
-.main-nav--opened .main-nav__wrapper::before {
   content: "";
   position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 2;
-  width: 7px;
-
-  box-shadow: inset 4px 0 7px -2px fade(@black, 40%);
+  top: 1px;
+  left: 1px;
+  width: 24px;
+  height: 24px;
+  background-image: url("../img/icon-open.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-color: #ffffff;
 }
 
-.main-nav__toggle {
+.main-nav--opened .main-nav__toggle {
   position: absolute;
-  top: 3px;
-  right: 7px;
-  width: 50px;
-  height: 50px;
-  padding: 0;
-  border: 0;
-  background-color: transparent;
-
-}
-
-
-.main-nav--nojs .main-nav__toggle {
-  display: none;
-}
-
-.main-nav--nojs .main-nav__wrapper {
-  position: static;
-  min-height: 0;
-}
-
-.main-nav--nojs .site-list__item {
+  top: 18px;
+  right: 20px;
+  z-index: 10;
   display: block;
+  width: 24px;
+  height: 24px;
+  background-color: rgba(255, 255, 255, 0);
+  border: none;
+  cursor: pointer;
+
+  &:hover {
+    background-color: #81b3d2;
+  }
 }
 
-.main-nav--nojs .site-list__item {
-  display: block;
+.main-nav--opened .main-nav__toggle::before {
+  content: "";
+  position: absolute;
+  top: 1px;
+  left: 1px;
+  width: 24px;
+  height: 24px;
+  background-image: url("../img/icon-cross.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
 }
+
+@media (max-width: @mobile-width-only) {
+  .main-nav--closed .site-list {
+    display: none;
+  }
+
+  .main-nav--opened .site-list {
+    display: block;
+  }
+
+  .main-nav--opened .page-header__logo {
+    top: 267px;
+  }
+
+  .main-nav--nojs .main-nav__toggle {
+    display: none;
+  }
+
+  .main-nav--nojs .page-header__logo {
+    top: 267px;
+  }
+
+  .main-nav--nojs .site-list {
+    display: block;
+  }
+}
+
+
+
+
+
 
 
 
