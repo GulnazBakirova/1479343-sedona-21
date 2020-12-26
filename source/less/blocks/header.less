@@ -106,7 +106,7 @@
   display: block;
   width: 24px;
   height: 24px;
-  background-color: #ffffff;
+  background-color: @white;
   border: none;
   cursor: pointer;
 
@@ -128,7 +128,6 @@
   background-image: url("../img/icon-open.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
-  background-color: #ffffff;
 }
 
 .main-nav--opened .main-nav__toggle {
@@ -329,7 +328,7 @@ li.site-list__item.right {
 }
 
 
-.site-list__link {
+.text {
   &:not(&--active):hover {
   @media @tablet {
     color: @blue;
@@ -339,3 +338,9 @@ li.site-list__item.right {
   }
 }
 }
+
+
+
+
+
+

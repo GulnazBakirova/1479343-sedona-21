@@ -58,16 +58,18 @@ margin: auto;
 }
 
 .features__description {
-  box-sizing: border-box;
+  padding-top: 38px;
+  padding-right: 30px;
+  padding-bottom: 40px;
+  padding-left: 30px;
   text-align: center;
-  padding: 38px 6.25% 25px;
   color: @white;
   background-color: @blue;
 
 &--first {
   padding-top: 58px;
   @media @tablet {
-  width: 256px;
+   min-width: 256px;
 }
   @media @desktop {
   width: 400px;
@@ -108,14 +110,13 @@ margin: auto;
   overflow: hidden;
   height: 260px;
   width: 100%;
+}
 
-  @media @tablet {
-    width: 512px;
-  }
-
-    @media @desktop {
-    width: 800px;
-  }
+.features-extra__img-wrapper {
+  position: relative;
+  overflow: hidden;
+  height: 260px;
+  width: 100%;
 }
 
 .features__img {
@@ -126,6 +127,12 @@ margin: auto;
 }
 
 .features-main {
+  @media @tablet {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+}
 @media @desktop {
   display: flex;
   justify-content: space-between;
@@ -133,6 +140,22 @@ margin: auto;
   padding: 0;
 }
 }
+
+.features-extra--reverse {
+    @media @tablet {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+}
+@media @desktop {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+}
+}
+
 
 /* ====== Advantage ====== */
 
@@ -428,9 +451,6 @@ margin: auto;
   width: 100%;
   height: 260px;
 
-  @media @tablet {
-    width: 512px;
-  }
 
     @media @desktop {
     width: 800px;
@@ -745,7 +765,8 @@ margin: auto;
   bottom: 0;
   width: 100%;
   height: 57px;
-  background: url("../img/intro-triangle.svg") no-repeat 50% 50%;
+  background: url("../img/intro-triangle.svg") no-repeat 50% 100%;
+  background-size: cover;
 
     @media @tablet {
       width: 100%;
@@ -796,7 +817,7 @@ margin: auto;
   background: @blue url("../img/photo-mobile.jpg") no-repeat 50% 21%;
 
     @media @retina {
-    background-image: url("../photo-mobile2x.jpg");
+    background-image: url("../img/photo-mobile2x.jpg");
   }
 
     @media @tablet {
@@ -823,11 +844,12 @@ margin: auto;
 .photo-intro__img-wrapper::after {
   content: "";
   position: absolute;
-  left: 0;
   bottom: 0;
-  width: 320px;
+  left: 0;
+  width: 100%;
   height: 57px;
-  background: url("../img/intro-triangle.png") no-repeat 50% 50%;
+  background: url("../img/intro-triangle.svg") no-repeat 50% 100%;
+  background-size: cover;
 
       @media @tablet {
       width: 100%;

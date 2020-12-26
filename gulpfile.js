@@ -4,10 +4,11 @@ const sourcemap = require("gulp-sourcemaps");
 const less = require("gulp-less");
 const postcss = require("gulp-postcss");
 const autoprefixer = require("autoprefixer");
-const imagemin = require('gulp-imagemin');
 const rename = require("rename");
+const imagemin = require('gulp-imagemin');
 const webp = require("gulp-webp");
 const csso = require("postcss-csso");
+const svgstore = require("gulp-svgstore");
 const sync = require("browser-sync").create();
 
 // Styles
@@ -19,7 +20,6 @@ const styles = () => {
     .pipe(less())
     .pipe(postcss([
       autoprefixer()
-      csso()
     ]))
     .pipe(sourcemap.write("."))
     .pipe(gulp.dest("source/css"))
@@ -78,3 +78,14 @@ const createWebp = () => {
  .pipe(gulp.dest("source/img"))
 }
 exports.createWebp = createWebp;
+
+
+// Sprite
+
+const sprite = () => {
+ return gulp.src("source/img/icons/*.svg")
+ .pipe(svgstore())
+ .pipe(rename("sprite.svg"))
+ .pipe(gulp.dest("source/img/icons"));
+}
+exports.sprite = sprite;
