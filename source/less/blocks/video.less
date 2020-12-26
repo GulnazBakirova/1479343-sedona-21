@@ -4,6 +4,14 @@
   font-weight: bold;
   font-size: 18px;
   line-height: 26px;
+
+  @media @tablet {
+    font-size: 30px;
+  }
+    @media @desktop {
+      margin-top: 65px;
+    font-size: 30px;
+  }
 }
 
 .video-text {
@@ -12,10 +20,20 @@
   font-weight: normal;
   font-size: 14px;
   line-height: 24px;
+  margin: 27px auto 0;
+
+  @media @tablet {
+    margin-top: 31px;
+    margin-bottom: 80px;
+    max-width: 444px;
+  }
 }
 
 .video {
   position: relative;
+  @media @tablet {
+    margin-bottom: 75px;
+  }
 }
 
 

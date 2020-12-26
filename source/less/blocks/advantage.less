@@ -1,0 +1,284 @@
+/* ====== Advantage ====== */
+
+.advantage-list {
+ display: flex;
+ flex-direction: column;
+ justify-content: flex-start;
+ align-items: flex-start;
+  margin: 0 auto;
+  padding: 24px 20px 23px;
+  width: 280px;
+  list-style: none;
+
+@media @tablet {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+}
+@media @desktop {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  box-sizing: border-box;
+  justify-content: space-between;
+}
+}
+
+.house {
+  @media @tablet {
+    order: 1;
+  }
+    @media @desktop {
+    order: 1;
+  }
+}
+
+.food {
+  @media @tablet {
+    order: 2;
+  }
+    @media @desktop {
+    order: 2;
+  }
+}
+
+.souvenir {
+  @media @tablet {
+    order: 3;
+  }
+    @media @desktop {
+    order: 3;
+  }
+}
+
+
+.advantage-title {
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: bold;
+  text-align: left;
+}
+
+.advantage-text {
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: normal;
+  text-align: left;
+}
+
+.house__img-wrapper,
+.souvenir__img-wrapper,
+.food__img-wrapper {
+  @media @mobile {
+  display: inline-block;
+  margin-right: 260px;
+}
+ @media @tablet {
+  margin-right: 0px;
+}
+ @media @desktop {
+  margin-right: 0px;
+}
+}
+
+.house-img {
+
+  @media @tablet {
+  width: 75px;
+  height: 72px;
+}
+
+  @media @desktop {
+  width: 75px;
+  height: 72px;
+}
+}
+
+.house__img-wrapper {
+  margin-top: 1px;
+  margin-left: -18px;
+
+    @media @tablet {
+  margin-top: 35px;
+  margin-left: -530px;
+}
+
+  @media @desktop {
+  margin-top: 35px;
+  margin-left: -530px;
+}
+}
+
+.advantage-title--house {
+  margin-top: -32px;
+  margin-left: 30px;
+
+
+  @media @tablet {
+  margin-top: 30px;
+  margin-left: -200px;
+  font-size: 21px;
+  line-height: 21px;
+}
+
+  @media @desktop {
+  margin-top: 25px;
+  margin-left: -300px;
+  font-size: 21px;
+  line-height: 21px;
+}
+}
+
+.advantage-text--house {
+  margin-top: 20px;
+  margin-left: 30px;
+
+  @media @tablet {
+  width: 185px;
+  text-align: center;
+  margin-top: 25px;
+  margin-left: -200px;
+}
+
+  @media @desktop {
+  width: 282px;
+  text-align: center;
+  margin-top: 25px;
+  margin-left: -400px;
+  font-size: 14px;
+  line-height: 21px;
+}
+}
+
+.gift-img {
+  @media @tablet {
+  width: 63px;
+  height: 75px;
+}
+
+  @media @desktop {
+  width: 63px;
+  height: 75px;
+}
+}
+
+.souvenir__img-wrapper {
+  margin-top: 10px;
+  margin-left: -15px;
+
+      @media @tablet {
+  margin-top: 33px;
+  margin-right: -70px;
+}
+
+    @media @desktop {
+  margin-top: 33px;
+  margin-right: -150px;
+}
+}
+
+.advantage-title--souvenir {
+  margin-top: -30px;
+  margin-left: 30px;
+
+      @media @tablet {
+  margin-top: 30px;
+  margin-left: 145px;
+  font-size: 21px;
+  line-height: 21px;
+}
+
+    @media @desktop {
+  margin-top: 25px;
+  margin-left: 180px;
+  font-size: 21px;
+  line-height: 21px;
+}
+}
+
+.advantage-text--souvenir {
+  margin-top: 18px;
+  margin-left: 30px;
+
+  @media @tablet {
+  width: 193px;
+  text-align: center;
+    margin-top: 21px;
+  margin-left: 80px;
+}
+
+    @media @desktop {
+  width: 244px;
+  text-align: center;
+  margin-top: 21px;
+  margin-left: 80px;
+  font-size: 14px;
+  line-height: 21px;
+}
+}
+
+.food-img {
+  @media @tablet {
+  width: 76px;
+  height: 69px;
+}
+
+  @media @desktop {
+  width: 76px;
+  height: 69px;
+}
+}
+
+.food__img-wrapper {
+  margin-top: 19px;
+  margin-left: -19px;
+
+    @media @tablet {
+  margin-top: 37px;
+  margin-right: 17px;
+}
+
+  @media @desktop {
+  margin-top: 37px;
+  margin-right: 17px;
+}
+}
+
+.advantage-title--food {
+  margin-top: -30px;
+  margin-left: 30px;
+
+       @media @tablet {
+  margin-top: 30px;
+  margin-left: 120px;
+  font-size: 21px;
+  line-height: 21px;
+}
+
+     @media @desktop {
+  margin-top: 25px;
+  margin-left: 120px;
+  font-size: 21px;
+  line-height: 21px;
+}
+}
+
+.advantage-text--food {
+  margin-top: 18px;
+  margin-left: 30px;
+
+  @media @tablet {
+  width: 180px;
+  text-align: center;
+    margin-top: 21px;
+  margin-left: -5px;
+}
+
+  @media @desktop {
+  width: 313px;
+  text-align: center;
+  margin-top: 21px;
+  margin-left: -5px;
+  font-size: 14px;
+  line-height: 21px;
+}
+}

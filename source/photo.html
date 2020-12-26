@@ -21,34 +21,18 @@
                <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
                <div class="main-nav__wrapper">
                   <ul class="main-nav__list site-list list-reset">
-                     <li class="site-list__item left"><a class="site-list__link" href="index.html">главная</a></li>
-                     <li class="site-list__item left site-list__item--active"><a class="site-list__link site-list__link--active" href="blank.html">фото и видео</a></li>
-                     <li class="site-list__item right"><a class="site-list__link" href="form.html">форма отзыва</a></li>
-                     <li class="site-list__item right"><a class="site-list__link" href="blank.html">html academy</a></li>
+                     <li class="site-list__item left"><a class="site-list__link" href="index.html"><span class="text">главная</span></a></li>
+                     <li class="site-list__item left site-list__item--active"><a class="site-list__link" href="blank.html"><span class="text text--active">фото и видео</span></a></li>
+                     <li class="site-list__item right"><a class="site-list__link" href="form.html"><span class="text">форма отзыва</span></a></li>
+                     <li class="site-list__item right"><a class="site-list__link" href="blank.html"><span class="text">html academy</span></a></li>
                   </ul>
                </div>
             </nav>
          </header>
-         <script>
-            var navMain = document.querySelector('.main-nav');
-            var navToggle = document.querySelector('.main-nav__toggle');
-
-            navMain.classList.remove('main-nav--nojs');
-
-            navToggle.addEventListener('click', function() {
-              if (navMain.classList.contains('main-nav--closed')) {
-                navMain.classList.remove('main-nav--closed');
-                navMain.classList.add('main-nav--opened');
-              } else {
-                navMain.classList.add('main-nav--closed');
-                navMain.classList.remove('main-nav--opened');
-              }
-            });
-         </script>
          <main class="photo-main">
             <section class="photo-main__intro photo-intro">
                <div class="photo-intro__img-wrapper">
-                  <img class="photo-intro__img" src="img/SEDONA.svg" width="229" height="39" alt="Sedona">
+                  <img class="photo-intro__img" src="img/SEDONA.svg" width="460" height="80" alt="Sedona">
                </div>
                <h1 class="photo-intro__title">фото и видео</h1>
                <p class="photo-intro__text">не можете решиться на путешествие из-за курса? фотографии помогут вам забыть о политике и экономике.</p>
@@ -61,7 +45,7 @@
               <source type="image/webp" srcset="img/webp/photo-1-mobile1x.webp 1x, img/webp/photo-1-mobile2x.webp 2x">
               <source media="(min-width: 1200px)" srcset="img/photo-1-desktop1x.jpg 1x, img/photo-1-desktop2x.jpg 2x">
               <source media="(min-width: 768px)" srcset="img/photo-1-tablet1x.jpg 1x, img/photo-1-tablet2x.jpg 2x">
-               <img class="photo__image" src="img/photo-1-mobile.jpg" srcset="img/photo-1-mobile2x.jpg 2x" alt="Неродные просторы">
+               <img class="photo__image full" src="img/photo-1-mobile1x.jpg" srcset="img/photo-1-mobile1x.jpg 1x, img/photo-1-mobile2x.jpg 2x" alt="Неродные просторы">
              </picture>
                </a>
                <div class="photo__information photo__information--full">
@@ -89,7 +73,7 @@
               <source type="image/webp" srcset="img/webp/photo-2-mobile.webp 1x, img/webp/photo-2-mobile2x.webp 2x">
               <source media="(min-width: 1200px)" srcset="img/photo-2-desktop1x.jpg 1x, img/photo-2-desktop2x.jpg 2x">
               <source media="(min-width: 768px)" srcset="img/photo-2-tablet1x.jpg 1x, img/photo-2-tablet2x.jpg 2x">
-               <img class="photo__image" src="img/photo-2-mobile.jpg" srcset="img/photo-2-mobile2x.jpg 2x" alt="Местная растительность">
+               <img class="photo__image" src="img/photo-2-mobile.jpg" srcset="img/photo-2-mobile.jpg 1x, img/photo-2-mobile2x.jpg 2x" alt="Местная растительность">
              </picture>
                </a>
                <div class="photo__information">
@@ -116,7 +100,7 @@
               <source type="image/webp" srcset="img/webp/photo-3-mobile.webp 1x, img/webp/photo-3-mobile2x.webp 2x">
               <source media="(min-width: 1200px)" srcset="img/photo-3-desktop1x.jpg 1x, img/photo-3-desktop2x.jpg 2x">
               <source media="(min-width: 768px)" srcset="img/photo-3-tablet1x.jpg 1x, img/photo-3-tablet2x.jpg 2x">
-              <img class="photo__image" src="img/photo-3-mobile.jpg" srcset="img/photo-3-mobile2x.jpg 2x" alt="Дорога на север">
+              <img class="photo__image" src="img/photo-3-mobile.jpg" srcset="img/photo-3-mobile.jpg 1x, img/photo-3-mobile2x.jpg 2x" alt="Дорога на север">
              </picture>
                </a>
                <div class="photo__information">
@@ -143,7 +127,7 @@
               <source type="image/webp" srcset="img/webp/photo-3-mobile.webp 1x, img/webp/photo-4-mobile2x.webp 2x">
               <source media="(min-width: 1200px)" srcset="img/photo-4-desktop1x.jpg 1x, img/photo-4-desktop2x.jpg 2x">
               <source media="(min-width: 768px)" srcset="img/photo-4-tablet1x.jpg 1x, img/photo-4-tablet2x.jpg 2x">
-              <img class="photo__image" src="img/photo-4-mobile1x.jpg" srcset="img/photo-4-mobile2x.jpg 2x" alt="Мост дьявола">
+              <img class="photo__image" src="img/photo-4-mobile1x.jpg" srcset="img/photo-4-mobile1x.jpg 1x, img/photo-4-mobile2x.jpg 2x" alt="Мост дьявола">
              </picture>
                </a>
                <div class="photo__information">
@@ -167,9 +151,12 @@
                <h3 class="video-title">все еще сомневаетесь?</h3>
                <p class="video-text">смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
                <picture>
+            <source type="image/webp" media="(min-width: 1200px)" srcset="img/video-desktop1x.webp 1x, img/video-desktop2x.webp 2x">
+            <source type="image/webp" media="(min-width: 768px)" srcset="img/video-tablet1x.webp 1x, img/video-tablet2x.webp 2x">
+            <source type="image/webp" srcset="img/video.webp 1x, img/video-mobile2x.webp 2x">
             <source media="(min-width: 1200px)" srcset="img/video-desktop1x.jpg 1x, img/video-desktop2x.jpg 2x">
             <source media="(min-width: 768px)" srcset="img/video-tablet1x.jpg 1x, img/video-tablet2x.jpg 2x">
-               <img class="video-img" srcset="img/video.jpg" srcset="video-mobile2x.jpg 2x" alt="Видеопрезентация Седона">
+               <img class="video-img" src="img/video.jpg" srcset="img/video.jpg 1x, video-mobile2x.jpg 2x" alt="Видеопрезентация Седона">
              </picture>
                <div class="video-controls video__panel">
                   <div class="video-controls__scale">

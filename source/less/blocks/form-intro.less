@@ -1,0 +1,100 @@
+/* ========= Форма intro ======== */
+
+.form-main__img-wrapper {
+  position: relative;
+  height: 200px;
+  background: @blue url("../img/form-mobile.jpg") no-repeat 50% 21%;
+
+    @media @retina {
+    background-image: url("../img/form-mobile2x.jpg");
+  }
+
+    @media @tablet {
+    padding-top: 95px;
+    background-image: url("../img/form-tablet.jpg");
+    background-size: cover;
+
+      @media @retina {
+      background-image: url("../img/form-tablet2x.jpg");
+    }
+  }
+
+  @media @desktop {
+    padding-top: 103px;
+    background-image: url("../img/form-desktop.jpg");
+    background-size: image-size("../img/form-desktop.jpg");
+
+        @media @retina {
+      background-image: url("../img/form-desktop2x.jpg");
+    }
+  }
+}
+
+.form-main__img-wrapper::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 57px;
+  background: url("../img/intro-triangle.svg") no-repeat 50% 100%;
+  background-size: cover;
+
+    @media @tablet {
+      width: 100%;
+      height: 57px;
+      background-image: url("../img/intro-triangle-tablet.svg");
+      background-size: 100% 57px;
+    }
+
+    @media @desktop {
+      width: 100%;
+      height: 57px;
+      background-image: url("../img/intro-triangle-desktop.svg");
+    }
+}
+
+
+
+.form-main__title {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 26px;
+  text-transform: uppercase;
+  @media @tablet {
+    font-size: 30px;
+  }
+    @media @desktop {
+    font-size: 30px;
+    margin-top: 110px;
+  }
+}
+
+.form-main__text {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  text-transform: uppercase;
+  margin: 27px auto 0;
+
+  @media @tablet {
+    margin-top: 31px;
+    max-width: 444px;
+  }
+}
+
+.form-main__intro {
+  margin-bottom: 60px;
+}
+
+.form-main__img {
+  padding-top: 50px;
+  width: 229px;
+
+  @media @tablet {
+  padding-top: 0px;
+  width: 460px;
+  }
+}

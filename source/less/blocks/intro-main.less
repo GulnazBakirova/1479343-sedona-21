@@ -1,23 +1,25 @@
 /* ====== Intro на главной странице ====== */
 
 .intro__img {
+  padding-top: 35px;
+
   @media @desktop {
-  padding-top: 76px;
-  padding-bottom: 80px;
+  padding-top: 25px;
 }
 }
 
 .intro__img-wrapper {
   position: relative;
   padding-top: 51px;
-  height: 389px;
+  height: 332px;
   background-position: center bottom;
   background-repeat: no-repeat;
   background-color: @blue;
-  background-image: url("../img/back-mobile.png");
+  background-image: url("../img/back-mobile.jpg");
+  width: 100%;
 
       @media @retina {
-    background-image: url("../back-mobile2x.jpg");
+    background-image: url("../img/back-mobile2x.jpg");
   }
 
   @media @tablet {
@@ -32,7 +34,7 @@
 
   @media @desktop {
     position: relative;
-    height: 518px;
+    height: 461px;
     width: 1200px;
     background-image: url("../img/desktopintro.jpg") no-repeat 50% 21%;
 
@@ -50,7 +52,9 @@
   left: 0;
   width: 100%;
   height: 57px;
-  background: url("../img/intro-triangle.svg") no-repeat 50% 20%;
+  background: url("../img/intro-triangle.svg") no-repeat 50% 100%;
+  background-size: cover;
+
 
   @media @tablet {
       width: 100%;
@@ -63,6 +67,7 @@
       width: 100%;
       height: 57px;
       background-image: url("../img/intro-triangle-desktop.svg");
+      background-size: cover;
     }
 }
 
@@ -70,6 +75,11 @@
   margin-top: 34px;
   margin-left: 25px;
   margin-right: 25px;
+
+  @media @desktop {
+    margin-top: 60px;
+    margin-bottom: 25px;
+  }
 }
 
 .intro__img {
@@ -92,6 +102,10 @@
   font-size: 18px;
   line-height: 26px;
   text-transform: uppercase;
+
+  @media @desktop {
+    font-size: 21px;
+  }
 }
 
 .intro__text {

@@ -58,7 +58,6 @@
 
   &--full {
     border-top: 1px solid @basic-gray;
-    width: 280px;
 
     @media @tablet {
       width: 648px;
@@ -67,6 +66,7 @@
 
     @media @desktop {
       width: 100%;
+      margin-top: 80px;
     }
   }
 }
@@ -78,7 +78,17 @@
 .photo__image {
   display: block;
   max-width: 100%;
+  width: 100%;
   height: auto;
+}
+
+.photo__link {
+  min-width: 280px;
+  max-width: 767px;
+
+  @media @desktop {
+    max-width: 1200px;
+  }
 }
 
 .photo__information {
@@ -183,9 +193,5 @@
     margin-bottom: 0px;
   }
 }
-
-
-
-
 
 

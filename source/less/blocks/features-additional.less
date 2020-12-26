@@ -1,0 +1,85 @@
+/* ====== Features-add ====== */
+
+.features-additional {
+  text-align: center;
+  padding-right: 6.25%;
+  background-color: @gray;
+
+  @media @tablet {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+    @media @desktop {
+    height: 256px;
+  }
+}
+
+
+.features-additional__item {
+  box-sizing: border-box;
+  padding: 26px 15px 13px;
+  border-bottom: 1px solid @light-gray;
+
+  &:last-child {
+    border-bottom: none;
+  }
+
+  @media @tablet {
+    border-bottom: none;
+    padding: 45px 49px 30px;
+    width: 33.333333%;
+  }
+    @media @desktop {
+    padding-bottom: 50px;
+  }
+}
+
+
+.features-additional__title {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 26px;
+  margin: 0 auto;
+
+
+    @media @tablet {
+    font-size: 21px;
+  }
+
+  @media @desktop {
+    font-size: 21px;
+    max-width: 150px;
+    padding-top: -90px;
+  }
+}
+
+.features-additional__text {
+  font-size: 14px;
+  font-weight: normal;
+  font-style: normal;
+  line-height: 21px;
+    @media @tablet {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  @media @desktop {
+    padding-top: 25px;
+  }
+}
+
+.features-additional__number {
+  font-size: 14px;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 21px;
+
+    @media @desktop {
+    padding-top: 10px;
+  }
+}
+

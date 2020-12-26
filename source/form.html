@@ -21,34 +21,18 @@
                <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
                <div class="main-nav__wrapper">
                   <ul class="main-nav__list site-list list-reset">
-                     <li class="site-list__item left"><a class="site-list__link" href="index.html">главная</a></li>
-                     <li class="site-list__item left"><a class="site-list__link" href="photo.html">фото и видео</a></li>
-                     <li class="site-list__item right site-list__item--active"><a class="site-list__link site-list__link--active" href="blank.html">форма отзыва</a></li>
-                     <li class="site-list__item right"><a class="site-list__link" href="blank.html">html academy</a></li>
+                     <li class="site-list__item left"><a class="site-list__link" href="index.html"><span class="text">главная</span></a></li>
+                     <li class="site-list__item left"><a class="site-list__link" href="photo.html"><span class="text">фото и видео</span></a></li>
+                     <li class="site-list__item right site-list__item--active"><a class="site-list__link" href="blank.html"><span class="text text--active">форма отзыва</span></a></li>
+                     <li class="site-list__item right"><a class="site-list__link" href="blank.html"><span class="text">html academy</span></a></li>
                   </ul>
                </div>
             </nav>
          </header>
-         <script>
-            var navMain = document.querySelector('.main-nav');
-            var navToggle = document.querySelector('.main-nav__toggle');
-
-            navMain.classList.remove('main-nav--nojs');
-
-            navToggle.addEventListener('click', function() {
-              if (navMain.classList.contains('main-nav--closed')) {
-                navMain.classList.remove('main-nav--closed');
-                navMain.classList.add('main-nav--opened');
-              } else {
-                navMain.classList.add('main-nav--closed');
-                navMain.classList.remove('main-nav--opened');
-              }
-            });
-         </script>
          <main class="form-main">
             <section class="form-main__intro">
                <div class="form-main__img-wrapper">
-                  <img class="form-main__img" src="img/SEDONA.svg" width="229" height="39" alt="Sedona">
+                  <img class="form-main__img" src="img/SEDONA.svg" width="460" height="80" alt="Sedona">
                </div>
                <h1 class="form-main__title">оставьте свой отзыв</h1>
                <p class="form-main__text">помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
@@ -133,7 +117,7 @@
                   <textarea class="form-feedback__textarea form-feedback__input-text" name="message" placeholder="Опишите подробно все свои восторги"></textarea>
                </fieldset>
                <div class="form-feedback__submit-wrapper">
-                  <button class="button form-feedback__button" type="submit">Отправить отзыв</button>
+                  <button class="button form-feedback__button" type="submit"><span class="button-text">Отправить отзыв</span></button>
                   <p class="form-feedback__notification">* — обязательные поля</p>
                </div>
             </form>
