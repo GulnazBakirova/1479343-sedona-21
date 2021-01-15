@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title> Гостиницы | Букинг-агентство «Седона»</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body class="page-body">
     <div class="container">
@@ -44,56 +44,64 @@
           <h2 class="visually-hidden">преимущества седоны</h2>
           <section class="features-main">
             <div class="features__description features__description--first">
-              <h3 class="features__title list-reset">настоящий <br class="mobile-hidden"> городок</h3>
+              <h3 class="features__title features__title--real list-reset">настоящий городок</h3>
               <p class="features__number list-reset">&ndash; №1 &ndash;</p>
               <p class="features__text list-reset">седона не аттракцион для туристов, там течет своя жизнь</p>
             </div>
             <div class="features-main__img-wrapper">
               <picture>
-              <source type="image/webp" media="(min-width: 1200px)" srcset="img/webp/photo-city-desktop@1x.webp 1x, img/webp/photo-city-desktop@2x.webp 2x">
-              <source type="image/webp" media="(min-width: 768px)" srcset="img/webp/photo-city-tablet@1x.webp 1x, img/webp/photo-city-tablet@2x.webp 2x">
-              <source type="image/webp" srcset="img/webp/photo-city@1x1.webp 1x, img/webp/photo-city@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-city-desktop@1x.webp 1x, img/photo-city-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-city-tablet@1x.webp 1x, img/photo-city-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/photo-city@1x1.webp 1x, img/photo-city@2x.webp 2x">
               <source media="(min-width: 1200px)" srcset="img/photo-city-desktop@1x.jpg 1x, img/photo-city-desktop@2x.jpg 2x">
               <source media="(min-width: 768px)" srcset="img/photo-city-tablet@1x.jpg 1x, img/photo-city-tablet@2x.jpg 2x">
               <img class="features__img" src="img/photo-city@1x.jpg" srcset="img/photo-city@1x.jpg 1x, img/photo-city@2x.jpg 2x" alt="Кафе в Седоне">
             </picture>
             </div>
           </section>
-          <ul class="advantage-list list-reset">
-            <li class="house advantage-list__item list-reset">
+          <section class="advantage-list list-reset">
+            <div class="advantage-grid list-reset">
+            <div class="house advantage-list__item list-reset">
               <div class="house__img-wrapper">
-                <img class="house-img" src="img/icon-house.svg" width="39" height="36" alt="Жилье">
+                <svg class="house-img" width="39" height="36" id="Жилье">
+                <use xmlns="http://www.w3.org/2000/svg" xlink:href="img/sprite.svg#icon-house"></use>
+              </svg>
               </div>
               <h3 class="advantage-title advantage-title--house list-reset">жилье</h3>
               <p class="advantage-text advantage-text--house list-reset">рекомендуем пожить в настоящем мотеле, все как в кино!</p>
-            </li>
-            <li class="souvenir advantage-list__item list-reset">
+            </div>
+            <div class="souvenir advantage-list__item list-reset">
               <div class="souvenir__img-wrapper">
-                <img class="gift-img" src="img/icon-gift.svg" width="32" height="38" alt="Сувениры">
+                <svg class="gift-img" width="32" height="38" id="Сувениры">
+                  <use xmlns="http://www.w3.org/2000/svg" xlink:href="img/sprite.svg#icon-gift"></use>
+                </svg>
               </div>
               <h3 class="advantage-title advantage-title--souvenir list-reset">сувениры</h3>
               <p class="advantage-text advantage-text--souvenir list-reset">не только китайского, но <br class="mobile-hidden"> и местного производства!</p>
-            </li>
-            <li class="food advantage-list__item list-reset">
+            </div>
+            <div class="food advantage-list__item list-reset">
               <div class="food__img-wrapper">
-                <img class="food-img" src="img/icon-burger.svg" width="40" height="35" alt="Еда">
+                <svg class="food-img" width="40" height="35" id="Еда">
+                  <use xmlns="http://www.w3.org/2000/svg" xlink:href="img/sprite.svg#icon-burger"></use>
+                </svg>
               </div>
               <h3 class="advantage-title advantage-title--food list-reset">еда</h3>
               <p class="advantage-text advantage-text--food list-reset">всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
-            </li>
-          </ul>
+            </div>
+          </div>
+          </section>
           <section class="features-extra features-extra--reverse">
             <div class="features__description features-extra__description">
-              <h3 class="features__title features-extra__title list-reset">там есть <br class="mobile-hidden"> мост дьявола</h3>
+              <h3 class="features__title features-extra__title list-reset">там есть мост дьявола</h3>
               <p class="features__number list-reset">&ndash; №2 &ndash;</p>
               <p class="features__text features-extra__text list-reset">да, по нему можно пройти! Если вы осмелитесь, конечно
               </p>
             </div>
            <div class="features-extra__img-wrapper">
             <picture>
-              <source type="image/webp" media="(min-width: 1200px)" srcset="img/webp/photo-bridge-desktop@1x.webp 1x, img/webp/photo-bridge-desktop@2x.webp 2x">
-              <source type="image/webp" media="(min-width: 768px)" srcset="img/webp/photo-bridge-tablet@1x.webp 1x, img/webp/photo-bridge-tablet@2x.webp 2x">
-              <source type="image/webp" srcset="img/webp/photo-bridge@1x.webp 1x, img/webp/photo-bridge@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-bridge-desktop@1x.webp 1x, img/photo-bridge-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-bridge-tablet@1x.webp 1x, img/photo-bridge-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/photo-bridge@1x.webp 1x, img/photo-bridge@2x.webp 2x">
               <source media="(min-width: 1200px)" srcset="img/photo-bridge-desktop@1x.jpg 1x, img/photo-bridge-desktop@2x.jpg 2x">
               <source media="(min-width: 768px)" srcset="img/photo-bridge-tablet@1x.jpg 1x, img/photo-bridge-tablet@2x.jpg 2x">
               <img class="features__img" src="img/photo-bridge@1x.jpg" srcset="img/photo-bridge@1x.jpg 1x, img/photo-bridge@2x.jpg 2x" alt="Мост дьявола">
@@ -142,9 +150,25 @@
         </div>
         <div class="page-footer__social social">
           <ul class="social-list">
-            <li class="social-list__item"><a class="social-list__link" href="https://twitter.com/?lang=ru" title="Официальный аккаунт букинг агентства Sedona в Twitter"><img class="twitter-img" src="img/icon-twitter.svg" width="17" height="15" alt="Twitter"></a></li>
-            <li class="social-list__item"><a class="social-list__link" href="https://www.facebook.com/" title="Официальный аккаунт букинг агентства Sedona в Facebook"><img class="facebook-img" src="img/icon-facebook.svg" width="12" height="22" alt="Facebook"></a></li>
-            <li class="social-list__item"><a class="social-list__link" href="https://www.youtube.com/" title="Официальный аккаунт букинг агентства Sedona в Youtube"><img class="youtube-img" src="img/icon-youtube.svg" width="20" height="16" alt="Youtube">
+            <li class="social-list__item">
+              <a class="social-list__link" href="https://twitter.com/?lang=ru" title="Официальный аккаунт букинг агентства Sedona в Twitter">
+              <svg class="twitter-img" width="17" height="15" id="Twitter" xmlns="http://www.w3.org/2000/svg">
+<use xmlns="http://www.w3.org/2000/svg" xlink:href="img/sprite.svg#icon-twitter"></use>
+</svg>
+            </a>
+          </li>
+            <li class="social-list__item">
+              <a class="social-list__link" href="https://www.facebook.com/" title="Официальный аккаунт букинг агентства Sedona в Facebook">
+                <svg class="facebook-img" width="12" height="22" id="Facebook">
+                <use xmlns="http://www.w3.org/2000/svg" xlink:href="img/sprite.svg#icon-facebook"></use>
+              </svg>
+              </a>
+            </li>
+            <li class="social-list__item">
+              <a class="social-list__link" href="https://www.youtube.com/" title="Официальный аккаунт букинг агентства Sedona в Youtube">
+                <svg class="youtube-img" width="20" height="16" id="Youtube">
+                <use xmlns="http://www.w3.org/2000/svg" xlink:href="img/sprite.svg#icon-youtube"></use>
+              </svg>
               </a>
             </li>
           </ul>
@@ -152,7 +176,9 @@
         <div class="page-footer__copyright copyright">
           <span class="copyright__text">разработано</span>
           <a class="copyright__link" href="https://htmlacademy.ru/intensive/htmlcss" aria-label="Онлайн курс HTML и CSS. Профессиональная верстка сайтов. HTML Academy">
-            <svg class="copyright__img" aria-label="Логотип HTML Academy" width="27" height="35" viewBox="0 0 27 35" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M13.6 0H13.5L0 1.4V26.1L13.5 34.1L26.9 26.1V1.4L13.6 0ZM25 12.1L13.5 5.3V5.2H13.4L13.3 5.1V5.2L1.9 12.1V3.1L13.4 1.9L25 3.1V12.1ZM13.4 6.8L24.9 13.5L20.4 16.1L13.3 11.9V13.3L19.2 16.8L18.3 17.3L13.3 14.3V15.7L17.1 18L16.3 18.5L13.3 16.7V18.1L15.2 19.2L13.4 20.3L2 13.6L13.4 6.8ZM1.9 15.1L13.3 21.9V22.9L5.4 18.2V19.6L13.4 24.4V25.5L5.4 20.8V22.2L13.4 27L21.5 22.1V16.9L24.9 14.9V24.9L13.4 31.8L1.9 25V15.1Z"/></svg>
+            <svg class="copyright__img" aria-label="Логотип HTML Academy" width="27" height="35" viewBox="0 0 27 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <use xmlns="http://www.w3.org/2000/svg" xlink:href="img/sprite.svg#htmlacademy"></use>
+            </svg>
           </a>
         </div>
       </footer>

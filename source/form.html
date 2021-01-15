@@ -5,7 +5,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta http-equiv="X-UA-Compatible" content="ie=edge">
       <title> Гостиницы | Букинг-агентство «Седона»</title>
-      <link rel="stylesheet" href="css/style.css">
+      <link rel="stylesheet" href="css/style.min.css">
    </head>
    <body class="page-body">
       <div class="container">
@@ -122,45 +122,61 @@
                </div>
             </form>
          </main>
-         <footer class="page-footer">
-            <div class="page-footer__wrapper">
-               <h2 class="page-footer__hashtag">#visitsedona</h2>
-            </div>
-            <div class="page-footer__social social">
-               <ul class="social-list">
-                  <li class="social-list__item"><a class="social-list__link" href="https://twitter.com/?lang=ru" title="Официальный аккаунт букинг агентства Sedona в Twitter"><img class="twitter-img" src="img/icon-twitter.svg" width="17" height="15" alt="Twitter"></a></li>
-                  <li class="social-list__item"><a class="social-list__link" href="https://www.facebook.com/" title="Официальный аккаунт букинг агентства Sedona в Facebook"><img class="facebook-img" src="img/icon-facebook.svg" width="12" height="22" alt="Facebook"></a></li>
-                  <li class="social-list__item"><a class="social-list__link" href="https://www.youtube.com/" title="Официальный аккаунт букинг агентства Sedona в Youtube"><img class="youtube-img" src="img/icon-youtube.svg" width="20" height="16" alt="Youtube">
-                     </a>
-                  </li>
-               </ul>
-            </div>
-            <div class="page-footer__copyright copyright">
-               <span class="copyright__text">разработано</span>
+      <footer class="page-footer">
+        <div class="page-footer__wrapper">
+          <h2 class="page-footer__hashtag">#visitsedona</h2>
+        </div>
+        <div class="page-footer__social social">
+          <ul class="social-list">
+            <li class="social-list__item">
+              <a class="social-list__link" href="https://twitter.com/?lang=ru" title="Официальный аккаунт букинг агентства Sedona в Twitter">
+              <svg class="twitter-img" width="17" height="15" id="Twitter" xmlns="http://www.w3.org/2000/svg">
+<use xmlns="http://www.w3.org/2000/svg" xlink:href="img/sprite.svg#icon-twitter"></use>
+</svg>
+            </a>
+          </li>
+            <li class="social-list__item">
+              <a class="social-list__link" href="https://www.facebook.com/" title="Официальный аккаунт букинг агентства Sedona в Facebook">
+                <svg class="facebook-img" width="12" height="22" id="Facebook">
+                <use xmlns="http://www.w3.org/2000/svg" xlink:href="img/sprite.svg#icon-facebook"></use>
+              </svg>
+              </a>
+            </li>
+            <li class="social-list__item">
+              <a class="social-list__link" href="https://www.youtube.com/" title="Официальный аккаунт букинг агентства Sedona в Youtube">
+                <svg class="youtube-img" width="20" height="16" id="Youtube">
+                <use xmlns="http://www.w3.org/2000/svg" xlink:href="img/sprite.svg#icon-youtube"></use>
+              </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="page-footer__copyright copyright">
+          <span class="copyright__text">разработано</span>
           <a class="copyright__link" href="https://htmlacademy.ru/intensive/htmlcss" aria-label="Онлайн курс HTML и CSS. Профессиональная верстка сайтов. HTML Academy">
-            <svg class="copyright__img" aria-label="Логотип HTML Academy" width="27" height="35" viewBox="0 0 27 35" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M13.6 0H13.5L0 1.4V26.1L13.5 34.1L26.9 26.1V1.4L13.6 0ZM25 12.1L13.5 5.3V5.2H13.4L13.3 5.1V5.2L1.9 12.1V3.1L13.4 1.9L25 3.1V12.1ZM13.4 6.8L24.9 13.5L20.4 16.1L13.3 11.9V13.3L19.2 16.8L18.3 17.3L13.3 14.3V15.7L17.1 18L16.3 18.5L13.3 16.7V18.1L15.2 19.2L13.4 20.3L2 13.6L13.4 6.8ZM1.9 15.1L13.3 21.9V22.9L5.4 18.2V19.6L13.4 24.4V25.5L5.4 20.8V22.2L13.4 27L21.5 22.1V16.9L24.9 14.9V24.9L13.4 31.8L1.9 25V15.1Z"/></svg>
+            <svg class="copyright__img" aria-label="Логотип HTML Academy" width="27" height="35" viewBox="0 0 27 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <use xmlns="http://www.w3.org/2000/svg" xlink:href="img/sprite.svg#htmlacademy"></use>
+            </svg>
           </a>
-            </div>
-         </footer>
-      </div>
-      <div class="modal-form modal-form--success">
-         <div class="modal-form__top">
-            <p class="modal-form__title">Ваш отзыв отправлен!</p>
-            <p class="modal-form__text modal-form__text--success">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В&nbsp;ближайшее время мы опубликуем его на сайте.</p>
-         </div>
-         <div class="modal-form__bottom modal-form__bottom--success">
-            <button class="button modal-form__button modal-form__button--success">Закрыть окно</button>
-         </div>
-      </div>
-      <div class="modal-form modal-form--failure">
-         <div class="modal-form__top modal-form__top--failure">
-            <p class="modal-form__title">Что-то пошло не&nbsp;так!</p>
-            <p class="modal-form__text modal-form__text--failure">Проверьте поля, выделенные красным, скорее всего вы забыли&nbsp;их заполнить</p>
-         </div>
-         <div class="modal-form__bottom modal-form__bottom--failure">
-            <button class="button modal-form__button modal-form__button--failure">OK</button>
-         </div>
-      </div>
+        </div>
+      </footer>
+      <section class="popup-success popup-success--close">
+        <div class="popup-success__wrap">
+          <h2 class="popup-success__title">Ваш отзыв отправлен!</h2>
+          <p class="popup-success__text">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем его на сайте.</p>
+          <div class="popup-success__btn-wrap">
+            <button class="popup-success__btn" type="button">закрыть окно</button>
+          </div>
+        </div>
+      </section>
+      <section class="popup-falure popup-falure--close">
+        <div class="popup-falure__wrap">
+          <h2 class="popup-falure__title">Что-то пошло не так!</h2>
+          <p class="popup-falure__text">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+          <button class="popup-falure__btn" type="button">ок</button>
+        </div>
+      </section>
+    </div>
       <script src="js/script.js"></script>
    </body>
 </html>

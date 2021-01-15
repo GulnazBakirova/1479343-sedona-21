@@ -10,18 +10,34 @@
   width: 280px;
   list-style: none;
 
+  @media @tablet {
+    min-width: 768px;
+    margin: 0 auto;
+  }
+    @media @desktop {
+    margin: 0;
+  }
+}
+
+
+.advantage-grid {
 @media @tablet {
-  display: flex;
-  flex-direction: row;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  box-sizing: border-box;
   list-style: none;
 }
 @media @desktop {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 400px 400px 400px;
   box-sizing: border-box;
   justify-content: space-between;
 }
 }
+
+
+
+
 
 .house {
   @media @tablet {
@@ -99,12 +115,11 @@
 
     @media @tablet {
   margin-top: 35px;
-  margin-left: -530px;
 }
 
   @media @desktop {
   margin-top: 35px;
-  margin-left: -530px;
+  margin-left: -35px;
 }
 }
 
@@ -115,14 +130,14 @@
 
   @media @tablet {
   margin-top: 30px;
-  margin-left: -200px;
+  margin-left: 80px;
   font-size: 21px;
   line-height: 21px;
 }
 
   @media @desktop {
   margin-top: 25px;
-  margin-left: -300px;
+  margin-left: 145px;
   font-size: 21px;
   line-height: 21px;
 }
@@ -136,14 +151,13 @@
   width: 185px;
   text-align: center;
   margin-top: 25px;
-  margin-left: -200px;
 }
 
   @media @desktop {
+  margin-left: 40px;
   width: 282px;
   text-align: center;
   margin-top: 25px;
-  margin-left: -400px;
   font-size: 14px;
   line-height: 21px;
 }
@@ -167,12 +181,11 @@
 
       @media @tablet {
   margin-top: 33px;
-  margin-right: -70px;
 }
 
     @media @desktop {
   margin-top: 33px;
-  margin-right: -150px;
+  margin-left: -35px;
 }
 }
 
@@ -182,14 +195,14 @@
 
       @media @tablet {
   margin-top: 30px;
-  margin-left: 145px;
+  margin-left: 80px;
   font-size: 21px;
   line-height: 21px;
 }
 
     @media @desktop {
   margin-top: 25px;
-  margin-left: 180px;
+  margin-left: 125px;
   font-size: 21px;
   line-height: 21px;
 }
@@ -203,14 +216,14 @@
   width: 193px;
   text-align: center;
     margin-top: 21px;
-  margin-left: 80px;
 }
 
     @media @desktop {
-  width: 244px;
+  width: 320px;
+  white-space: nowrap;
   text-align: center;
-  margin-top: 21px;
-  margin-left: 80px;
+  margin-top: 25px;
+  margin-left: 17px;
   font-size: 14px;
   line-height: 21px;
 }
@@ -234,12 +247,11 @@
 
     @media @tablet {
   margin-top: 37px;
-  margin-right: 17px;
 }
 
   @media @desktop {
   margin-top: 37px;
-  margin-right: 17px;
+  margin-left: -30px;
 }
 }
 
@@ -249,14 +261,14 @@
 
        @media @tablet {
   margin-top: 30px;
-  margin-left: 120px;
+  margin-left: 90px;
   font-size: 21px;
   line-height: 21px;
 }
 
      @media @desktop {
   margin-top: 25px;
-  margin-left: 120px;
+  margin-left: 160px;
   font-size: 21px;
   line-height: 21px;
 }
@@ -270,15 +282,14 @@
   width: 180px;
   text-align: center;
     margin-top: 21px;
-  margin-left: -5px;
 }
 
   @media @desktop {
-  width: 313px;
+  width: 300px;
   text-align: center;
-  margin-top: 21px;
-  margin-left: -5px;
+  margin-top: 27px;
   font-size: 14px;
   line-height: 21px;
 }
 }
+

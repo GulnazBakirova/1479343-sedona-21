@@ -80,10 +80,29 @@ margin: auto;
   line-height: 26px;
   color: @white;
 
+
   @media @desktop {
   font-size: 21px;
   font-weight: bold;
   line-height: 26px;
+  text-align: center;
+  }
+}
+
+.features__title--real {
+    @media @tablet {
+    width: 130px;
+    padding-left: 30%;
+  }
+    @media @desktop {
+  width: 130px;
+  padding-left: 90px;
+  }
+}
+
+.features-extra__title {
+  @media @desktop {
+   width: 150px;
   }
 }
 
@@ -154,7 +173,16 @@ margin: auto;
   position: relative;
   overflow: hidden;
   height: 260px;
-  width: 100%;
+
+    @media @tablet {
+    width: 66.666667%;
+    min-height: 256px;
+    height: auto;
+  }
+
+      @media @desktop {
+    width: 800px;
+  }
 }
 
 
@@ -183,19 +211,7 @@ margin: auto;
 
 /* ====== Features-extra ====== */
 
-.features-extra {
-  margin-top: 32px;
-}
 
-.features-extra__img-wrapper {
-  width: 100%;
-  height: 260px;
-
-
-    @media @desktop {
-    width: 800px;
-  }
-}
 
 .features-extra--reverse {
 
@@ -219,7 +235,11 @@ margin: auto;
 }
 
 .features-extra__text {
-  margin-bottom: -10px;
+  @media @tablet {
+    width: 160px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 
@@ -231,6 +251,7 @@ margin: auto;
 
   @media @tablet {
     font-size: 21px;
+    max-width: 150px;
   }
 
   @media @desktop {
