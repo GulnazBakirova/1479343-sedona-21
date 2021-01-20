@@ -4,12 +4,15 @@
   font-weight: bold;
   font-size: 18px;
   line-height: 26px;
+  margin-top: 30px;
 
   @media @tablet {
+    margin-top: 55px;
     font-size: 30px;
   }
-    @media @desktop {
-      margin-top: 65px;
+
+  @media @desktop {
+    margin-top: 65px;
     font-size: 30px;
   }
 }
@@ -20,22 +23,28 @@
   font-weight: normal;
   font-size: 14px;
   line-height: 24px;
-  margin: 27px auto 0;
+  margin: 27px auto 35px;
+  width: 250px;
 
   @media @tablet {
     margin-top: 31px;
     margin-bottom: 80px;
-    max-width: 444px;
+    width: 460px;
+  }
+
+  @media @desktop {
+    margin-top: 31px;
+    margin-bottom: 80px;
   }
 }
 
 .video {
   position: relative;
+
   @media @tablet {
     margin-bottom: 75px;
   }
 }
-
 
 .video__img {
   display: block;
@@ -60,6 +69,7 @@
     height: 93px;
   }
 }
+
 .video-controls__scale {
   position: relative;
   z-index: 20;

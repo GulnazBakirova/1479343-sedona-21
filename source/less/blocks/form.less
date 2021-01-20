@@ -1,30 +1,46 @@
-/* ========= user-information ======== */
-
-.form-feedback__legend {
-  font-style: normal;
-  font-weight: bold;
-  font-size: 18px;
-  line-height: 26px;
-  text-transform: uppercase;
-}
-
-.form-feedback__label {
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 26px;
-  text-transform: uppercase;
-}
-
 .form-feedback__input-text {
-  width: 192px;
   height: 58px;
-  background-color: @gray;
-  border: none;
   font-style: normal;
   font-weight: bold;
   font-size: 18px;
   line-height: 26px;
+  box-sizing: border-box;
+  padding: 12px 17px;
+  width: 100%;
+  min-width: 150px;
+  min-height: 58px;
+  color: @black;
+  border: 4px solid @bg-color-body;
+  background-color: @bg-color-body;
+
+  &:hover {
+    border-color: @basic-gray;
+    background-color: @basic-gray;
+  }
+
+  &:focus {
+    outline: none;
+    border-color: @basic-gray;
+    background-color: @white;
+  }
+
+  &--contacts {
+    background-color: @gray;
+    border: none;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 26px;
+    padding-right: 75px;
+
+    @media @desktop {
+      width: 316px;
+    }
+  }
+}
+
+.form-feedback__input-text::placeholder {
+  color: inherit;
 }
 
 .form-feedback__input-text::-moz-placeholder,
@@ -33,62 +49,11 @@
 }
 
 
-/* ========= contact-information ======== */
-
-.form-feedback__striked-text {
-  font-style: normal;
-  font-weight: bold;
-  font-size: 18px;
-  line-height: 26px;
-  text-transform: uppercase;
-}
-
-.form-feedback__label--contacts {
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 26px;
-  text-transform: uppercase;
-}
-
-.form-feedback__input-text--contacts {
-  background-color: @gray;
-  border: none;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 18px;
-  line-height: 26px;
-}
-
-
-/* ========= estimate-information ======== */
-
-.form-feedback__legend--impression {
-  font-style: normal;
-  font-weight: bold;
-  font-size: 18px;
-  line-height: 26px;
-  text-transform: uppercase;
-}
-
-.form-feedback__label-radio {
-  font-style: normal;
-  font-weight: bold;
-  font-size: 18px;
-  line-height: 26px;
-}
-
-
-
-/* ========= emotion-information ======== */
-
-
 .form-feedback__button {
   display: block;
   box-sizing: border-box;
   padding: 13px 10px;
   border: 3px solid @blue;
-  font-weight: 700;
   color: @white;
   text-align: center;
   text-decoration: none;
@@ -98,6 +63,7 @@
   font-weight: bold;
   font-size: 21px;
   line-height: 26px;
+  width: 100%;
 
   &:hover {
     border-color: @blue-hover;
@@ -119,10 +85,11 @@
     border-color: @blue-down;
     background-color: @blue-down;
   }
+
+  @media @tablet {
+    width: 50%;
+  }
 }
-
-
-
 
 .form-feedback {
   display: flex;
@@ -244,13 +211,16 @@
 }
 
 .form-feedback__legend {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 26px;
+  text-transform: uppercase;
   position: absolute;
   left: 0;
   top: 18px;
   padding: 0;
   width: 100%;
-  font-size: 18px;
-  font-weight: 700;
   color: @black;
   text-align: center;
 
@@ -266,6 +236,12 @@
   }
 
   &--impression {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 26px;
+    text-transform: uppercase;
+
     @media @tablet {
       text-align: left;
     }
@@ -277,6 +253,12 @@
 }
 
 .form-feedback__striked-text {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 26px;
+  text-transform: uppercase;
+
   @media @tablet {
     display: flex;
     align-items: center;
@@ -340,28 +322,22 @@
 }
 
 .first {
-      @media @desktop {
-      margin-left: -180px;
-      margin-right: 50px;
-    }
+  @media @desktop {
+    margin-left: -180px;
+    margin-right: 50px;
+  }
 }
 
 .second {
-        @media @desktop {
-      margin-right: 50px;
-    }
+  @media @desktop {
+    margin-right: 50px;
+  }
 }
 
 .third {
-        @media @desktop {
-      margin-right: 50px;
-    }
-}
-
-.form-feedback__input-block--email {
-      @media @desktop {
-      margin-left: 80px;
-    }
+  @media @desktop {
+    margin-right: 50px;
+  }
 }
 
 .form-feedback__input-block {
@@ -416,6 +392,7 @@
   &--email {
     @media @desktop {
       width: 480px;
+      margin-left: 80px;
     }
 
     &::after {
@@ -448,10 +425,20 @@
 }
 
 .form-feedback__label {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 26px;
+  text-transform: uppercase;
   display: block;
   margin-right: 15px;
 
   &--contacts {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 26px;
+    text-transform: uppercase;
     margin-bottom: 7px;
     padding-left: 22px;
 
@@ -531,14 +518,16 @@
 }
 
 .form-feedback__label-radio {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 26px;
   position: relative;
   display: block;
   padding-top: 15px;
   padding-bottom: 14px;
   padding-left: 78px;
   width: 100%;
-  font-size: 18px;
-  font-weight: 700;
   text-transform: none;
 
   @media @tablet {
@@ -548,7 +537,7 @@
 
   @media @desktop {
     width: 80%;
-    padding-left: 0px;
+    padding-left: 0;
     margin-left: -3px;
   }
 
@@ -599,43 +588,6 @@
   outline-offset: 2px;
 }
 
-.form-feedback__input-text {
-  box-sizing: border-box;
-  padding: 12px 17px;
-  width: 100%;
-  min-width: 150px;
-  min-height: 58px;
-  font: inherit;
-  font-size: 18px;
-  font-weight: 700;
-  color: @black;
-  border: 4px solid @bg-color-body;
-  background-color: @bg-color-body;
-
-  &:hover {
-    border-color: @basic-gray;
-    background-color: @basic-gray;
-  }
-
-  &:focus {
-    outline: none;
-    border-color: @basic-gray;
-    background-color: @white;
-  }
-
-  &--contacts {
-    padding-right: 75px;
-
-    @media @desktop {
-      width: 316px;
-    }
-  }
-}
-
-.form-feedback__input-text::placeholder {
-  color: inherit;
-}
-
 .form-feedback__textarea {
   padding-top: 11px;
   padding-bottom: 11px;
@@ -663,14 +615,6 @@
 
   @media @desktop {
     padding-bottom: 65px;
-  }
-}
-
-.form-feedback__button {
-  width: 100%;
-
-  @media @tablet {
-    width: 50%;
   }
 }
 

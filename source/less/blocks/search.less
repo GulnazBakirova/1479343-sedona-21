@@ -16,14 +16,17 @@
 }
 
 .search-hotel__title {
+  margin-top: 6px;
   font-size: 21px;
   font-weight: bold;
   line-height: 26px;
 
   @media @tablet {
+    margin-top: 0;
     font-size: 30px;
   }
-    @media @desktop {
+
+  @media @desktop {
     font-size: 30px;
   }
 }
@@ -33,11 +36,29 @@
   font-size: 14px;
   font-weight: 400;
   line-height: 24px;
+  margin-bottom: 30px;
 
-    @media @desktop {
+  @media @tablet {
+    margin-top: 35px;
+    width: auto;
+    margin-bottom: 42px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  @media @desktop {
     margin-top: 35px;
   }
 }
+
+.book__word-wrap {
+  display: none;
+
+  @media @tablet {
+    display: block;
+  }
+}
+
 
 .search-hotel__button {
   display: block;
@@ -55,25 +76,23 @@
   background-color: @blue;
   cursor: pointer;
   width: 280px;
-     text-align: center;
-       margin-left: auto;
-    margin-right: auto;
-
-
-  @media @tablet {
-  margin-top: 35px;
-  width: 458px;
-  text-align: center;
   margin-left: auto;
   margin-right: auto;
+
+  @media @tablet {
+    margin-top: 35px;
+    width: 458px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   @media @desktop {
-  margin-top: 40px;
-  width: 458px;
-  text-align: center;
-  margin-left: auto;
-  margin-right: auto;
+    margin-top: 40px;
+    width: 458px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   &:hover {
@@ -98,13 +117,12 @@
   }
 }
 
-
 .map {
   @media @tablet {
-  width: 768px;
+    width: 768px;
   }
 
   @media @desktop {
-  width: 1200px;
+    width: 1200px;
   }
 }

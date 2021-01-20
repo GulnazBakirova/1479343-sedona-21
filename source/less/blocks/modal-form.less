@@ -2,10 +2,12 @@
   &--close {
     display: none;
   }
+
   &--open {
     display: block;
   }
 }
+
 .popup-success__wrap {
   position: fixed;
   z-index: 2;
@@ -22,13 +24,15 @@
   background-color: #ffffff;
   box-shadow: 0 5px 10px 3px rgba(0, 1, 1, 0.15);
 }
+
 .popup-success__title {
   margin: 0;
   padding-bottom: 25px;
-  font-size: 18px;c
+  font-size: 18px;
   line-height: 26px;
   text-align: center;
 }
+
 .popup-success__text {
   width: 220px;
   margin: 0;
@@ -37,6 +41,7 @@
   line-height: 24px;
   text-align: center;
 }
+
 .popup-success__btn-wrap {
   display: flex;
   flex-direction: column;
@@ -45,6 +50,7 @@
   padding: 20px 0;
   background-color: #f2f2f2;
 }
+
 .popup-success__btn {
   width: 280px;
   border: 0;
@@ -55,36 +61,44 @@
   font-weight: bold;
   text-transform: uppercase;
   background-color: #81b3d2;
+
   &:hover {
     background-color: #669ec0;
   }
+
   &:active {
     background-color: #5496bd;
   }
 }
+
 @media @tablet {
   .popup-success__wrap {
     width: 640px;
     margin-left: -320px;
   }
+
   .popup-success__title {
     width: 420px;
     font-size: 30px;
     line-height: 40px;
   }
+
   .popup-success__text {
     width: 420px;
   }
 }
-.popup-falure {
+
+.popup-failure {
   &--open {
     display: block;
   }
+
   &--close {
     display: none;
   }
 }
-.popup-falure__wrap {
+
+.popup-failure__wrap {
   position: fixed;
   z-index: 2;
   top: 50%;
@@ -101,14 +115,16 @@
   background-color: #ffffff;
   box-shadow: 0 5px 10px 3px rgba(0, 1, 1, 0.15);
 }
-.popup-falure__title {
+
+.popup-failure__title {
   margin: 0;
   padding-bottom: 25px;
   font-size: 18px;
   line-height: 26px;
   text-align: center;
 }
-.popup-falure__text {
+
+.popup-failure__text {
   width: 210px;
   margin: 0;
   padding-bottom: 35px;
@@ -116,7 +132,8 @@
   line-height: 24px;
   text-align: center;
 }
-.popup-falure__btn {
+
+.popup-failure__btn {
   width: 180px;
   border: 0;
   font-size: 18px;
@@ -126,24 +143,29 @@
   font-weight: bold;
   text-transform: uppercase;
   background-color: #81b3d2;
+
   &:hover {
     background-color: #669ec0;
   }
+
   &:active {
     background-color: #5496bd;
   }
 }
+
 @media @tablet {
-  .popup-falure__wrap {
+  .popup-failure__wrap {
     width: 400px;
     margin-left: -200px;
   }
-  .popup-falure__title {
+
+  .popup-failure__title {
     width: 220px;
     font-size: 30px;
     line-height: 40px;
   }
-  .popup-falure__text {
+
+  .popup-failure__text {
     width: 280px;
   }
 }

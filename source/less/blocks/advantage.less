@@ -1,10 +1,10 @@
 /* ====== Advantage ====== */
 
 .advantage-list {
- display: flex;
- flex-direction: column;
- justify-content: flex-start;
- align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
   margin: 0 auto;
   padding: 24px 20px 23px;
   width: 280px;
@@ -13,37 +13,37 @@
   @media @tablet {
     min-width: 768px;
     margin: 0 auto;
+    margin-bottom: 38px;
   }
-    @media @desktop {
+
+  @media @desktop {
     margin: 0;
+    margin-bottom: 57px;
   }
 }
-
 
 .advantage-grid {
-@media @tablet {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  box-sizing: border-box;
-  list-style: none;
+  @media @tablet {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    box-sizing: border-box;
+    list-style: none;
+  }
+
+  @media @desktop {
+    display: grid;
+    grid-template-columns: 400px 400px 400px;
+    box-sizing: border-box;
+    justify-content: space-between;
+  }
 }
-@media @desktop {
-  display: grid;
-  grid-template-columns: 400px 400px 400px;
-  box-sizing: border-box;
-  justify-content: space-between;
-}
-}
-
-
-
-
 
 .house {
   @media @tablet {
     order: 1;
   }
-    @media @desktop {
+
+  @media @desktop {
     order: 1;
   }
 }
@@ -52,7 +52,8 @@
   @media @tablet {
     order: 2;
   }
-    @media @desktop {
+
+  @media @desktop {
     order: 2;
   }
 }
@@ -61,11 +62,11 @@
   @media @tablet {
     order: 3;
   }
-    @media @desktop {
+
+  @media @desktop {
     order: 3;
   }
 }
-
 
 .advantage-title {
   font-size: 18px;
@@ -85,211 +86,222 @@
 .souvenir__img-wrapper,
 .food__img-wrapper {
   @media @mobile {
-  display: inline-block;
-  margin-right: 260px;
-}
- @media @tablet {
-  margin-right: 0px;
-}
- @media @desktop {
-  margin-right: 0px;
-}
+    display: inline-block;
+    margin-right: 260px;
+  }
+
+  @media @tablet {
+    margin-right: 0;
+  }
+
+  @media @desktop {
+    margin-right: 0;
+  }
 }
 
 .house-img {
-
   @media @tablet {
-  width: 75px;
-  height: 72px;
-}
+    width: 75px;
+    height: 72px;
+  }
 
   @media @desktop {
-  width: 75px;
-  height: 72px;
-}
+    width: 75px;
+    height: 72px;
+  }
 }
 
 .house__img-wrapper {
   margin-top: 1px;
-  margin-left: -18px;
 
-    @media @tablet {
-  margin-top: 35px;
-}
+  @media @tablet {
+    margin-top: 35px;
+    margin-left: -35px;
+  }
 
   @media @desktop {
-  margin-top: 35px;
-  margin-left: -35px;
-}
+    margin-top: 35px;
+    margin-left: -55px;
+  }
 }
 
 .advantage-title--house {
-  margin-top: -32px;
-  margin-left: 30px;
-
+  margin-top: -30px;
+  margin-left: 48px;
 
   @media @tablet {
-  margin-top: 30px;
-  margin-left: 80px;
-  font-size: 21px;
-  line-height: 21px;
-}
+    margin-top: 25px;
+    margin-left: 65px;
+    font-size: 21px;
+    line-height: 21px;
+  }
 
   @media @desktop {
-  margin-top: 25px;
-  margin-left: 145px;
-  font-size: 21px;
-  line-height: 21px;
-}
+    margin-top: 25px;
+    margin-left: 135px;
+    font-size: 21px;
+    line-height: 21px;
+  }
 }
 
 .advantage-text--house {
   margin-top: 20px;
-  margin-left: 30px;
+  margin-left: 50px;
 
   @media @tablet {
-  width: 185px;
-  text-align: center;
-  margin-top: 25px;
-}
+    width: 185px;
+    text-align: center;
+    margin-top: 25px;
+    margin-left: 10px;
+  }
 
   @media @desktop {
-  margin-left: 40px;
-  width: 282px;
-  text-align: center;
-  margin-top: 25px;
-  font-size: 14px;
-  line-height: 21px;
-}
+    margin-left: 30px;
+    width: 282px;
+    text-align: center;
+    margin-top: 25px;
+    font-size: 14px;
+    line-height: 21px;
+  }
 }
 
 .gift-img {
   @media @tablet {
-  width: 63px;
-  height: 75px;
-}
+    width: 63px;
+    height: 75px;
+  }
 
   @media @desktop {
-  width: 63px;
-  height: 75px;
-}
+    width: 63px;
+    height: 75px;
+  }
 }
 
 .souvenir__img-wrapper {
   margin-top: 10px;
-  margin-left: -15px;
+  margin-left: 0;
 
-      @media @tablet {
-  margin-top: 33px;
-}
+  @media @tablet {
+    margin-top: 30px;
+    margin-left: 40px;
+  }
 
-    @media @desktop {
-  margin-top: 33px;
-  margin-left: -35px;
-}
+  @media @desktop {
+    margin-top: 33px;
+    margin-left: -55px;
+  }
 }
 
 .advantage-title--souvenir {
   margin-top: -30px;
-  margin-left: 30px;
+  margin-left: 50px;
 
-      @media @tablet {
-  margin-top: 30px;
-  margin-left: 80px;
-  font-size: 21px;
-  line-height: 21px;
-}
+  @media @tablet {
+    margin-top: 28px;
+    margin-left: 90px;
+    font-size: 21px;
+    line-height: 21px;
+  }
 
-    @media @desktop {
-  margin-top: 25px;
-  margin-left: 125px;
-  font-size: 21px;
-  line-height: 21px;
-}
+  @media @desktop {
+    margin-top: 23px;
+    margin-left: 120px;
+    font-size: 21px;
+    line-height: 21px;
+  }
 }
 
 .advantage-text--souvenir {
   margin-top: 18px;
-  margin-left: 30px;
+  margin-left: 50px;
 
   @media @tablet {
-  width: 193px;
-  text-align: center;
-    margin-top: 21px;
+    width: 193px;
+    text-align: center;
+    margin-top: 26px;
+    margin-right: -8px;
+  }
+
+  @media @desktop {
+    text-align: center;
+    margin-top: 25px;
+    margin-left: 80px;
+    font-size: 14px;
+    line-height: 21px;
+  }
 }
 
-    @media @desktop {
-  width: 320px;
-  white-space: nowrap;
-  text-align: center;
-  margin-top: 25px;
-  margin-left: 17px;
-  font-size: 14px;
-  line-height: 21px;
-}
+.hidden-br {
+  display: none;
+
+  @media @tablet {
+    display: none;
+  }
 }
 
 .food-img {
   @media @tablet {
-  width: 76px;
-  height: 69px;
-}
+    width: 76px;
+    height: 69px;
+  }
 
   @media @desktop {
-  width: 76px;
-  height: 69px;
-}
+    width: 76px;
+    height: 69px;
+  }
 }
 
 .food__img-wrapper {
   margin-top: 19px;
-  margin-left: -19px;
 
-    @media @tablet {
-  margin-top: 37px;
-}
+  @media @tablet {
+    margin-top: 37px;
+    margin-left: -20px;
+  }
 
   @media @desktop {
-  margin-top: 37px;
-  margin-left: -30px;
-}
+    margin-top: 37px;
+    margin-left: -55px;
+  }
 }
 
 .advantage-title--food {
   margin-top: -30px;
-  margin-left: 30px;
+  margin-left: 50px;
 
-       @media @tablet {
-  margin-top: 30px;
-  margin-left: 90px;
-  font-size: 21px;
-  line-height: 21px;
-}
+  @media @tablet {
+    margin-top: 25px;
+    margin-left: 95px;
+    font-size: 21px;
+    line-height: 21px;
+  }
 
-     @media @desktop {
-  margin-top: 25px;
-  margin-left: 160px;
-  font-size: 21px;
-  line-height: 21px;
-}
+  @media @desktop {
+    margin-top: 25px;
+    margin-left: 150px;
+    font-size: 21px;
+    line-height: 21px;
+  }
 }
 
 .advantage-text--food {
   margin-top: 18px;
-  margin-left: 30px;
+  margin-left: 50px;
+  width: 180px;
 
   @media @tablet {
-  width: 180px;
-  text-align: center;
-    margin-top: 21px;
-}
+    width: 155px;
+    text-align: center;
+    margin-top: 29px;
+    margin-left: 35px;
+  }
 
   @media @desktop {
-  width: 300px;
-  text-align: center;
-  margin-top: 27px;
-  font-size: 14px;
-  line-height: 21px;
+    width: 300px;
+    text-align: center;
+    margin-top: 25px;
+    margin-left: 25px;
+    font-size: 14px;
+    line-height: 21px;
+  }
 }
-}
-
