@@ -5,6 +5,10 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta http-equiv="X-UA-Compatible" content="ie=edge">
       <title> Гостиницы | Букинг-агентство «Седона»</title>
+      <link rel="preload" href="/fonts/ptsans.woff2" as="font">
+      <link rel="preload" href="/fonts/ptsans.woff" as="font">
+      <link rel="preload" href="/fonts/ptsansbold.woff2" as="font">
+      <link rel="preload" href="/fonts/ptsansbold.woff" as="font">
       <link rel="stylesheet" href="css/style.min.css">
       </head>
       <body class="page-body">
@@ -74,15 +78,15 @@
                   <legend class="form-feedback__legend form-feedback__legend--impression">Ваше общее впечатление:</legend>
                   <ul class="form-feedback__input-wrapper">
                         <li class="form-feedback__input-block form-feedback__input-block--impression">
-                        <input class="form-feedback__radio visually-hidden" type="radio" name="impression" value="1" id="positive" checked>
+                        <input class="form-feedback__radio hidden" type="radio" name="impression" value="1" id="positive" checked>
                         <label class="form-feedback__label-radio" for="positive">Скорее положительное</label>
                         </li>
                         <li class="form-feedback__input-block form-feedback__input-block--impression">
-                        <input class="form-feedback__radio visually-hidden" type="radio" name="impression" value="2" id="negative">
+                        <input class="form-feedback__radio hidden" type="radio" name="impression" value="2" id="negative">
                         <label class="form-feedback__label-radio" for="negative">Скорее отрицательное</label>
                         </li>
                         <li class="form-feedback__input-block form-feedback__input-block--impression">
-                        <input class="form-feedback__radio visually-hidden" type="radio" name="impression" value="3" id="neutral">
+                        <input class="form-feedback__radio hidden" type="radio" name="impression" value="3" id="neutral">
                         <label class="form-feedback__label-radio" for="neutral">Затрудняюсь ответить</label>
                         </li>
                   </ul>
@@ -92,20 +96,20 @@
                         <span class="form-feedback__striked-text">Посещенные достопримечательности:</span>
                   </legend>
                   <ul class="form-feedback__input-wrapper form-feedback__input-wrapper--achivments">
-                        <li class="form-feedback__input-block form-feedback__input-block--achivments first">
-                        <input class="form-feedback__checkbox visually-hidden" type="checkbox" name="bridge" id="bridge" checked>
+                        <li class="form-feedback__input-block form-feedback__input-block--first form-feedback__input-block--achivments">
+                        <input class="form-feedback__checkbox hidden" type="checkbox" name="bridge" id="bridge" checked>
                         <label class="form-feedback__label-checkbox" for="bridge">Мост Дьявола</label>
                         </li>
-                        <li class="form-feedback__input-block form-feedback__input-block--achivments second">
-                        <input class="form-feedback__checkbox visually-hidden" type="checkbox" name="bell" id="bell">
+                        <li class="form-feedback__input-block form-feedback__input-block--second form-feedback__input-block--achivments">
+                        <input class="form-feedback__checkbox hidden" type="checkbox" name="bell" id="bell">
                         <label class="form-feedback__label-checkbox" for="bell">Гора-Колокол</label>
                         </li>
-                        <li class="form-feedback__input-block form-feedback__input-block--achivments third">
-                        <input class="form-feedback__checkbox visually-hidden" type="checkbox" name="park" id="park" checked>
+                        <li class="form-feedback__input-block form-feedback__input-block--third form-feedback__input-block--achivments">
+                        <input class="form-feedback__checkbox hidden" type="checkbox" name="park" id="park" checked>
                         <label class="form-feedback__label-checkbox" for="park">Слайд-парк</label>
                         </li>
                         <li class="form-feedback__input-block form-feedback__input-block--achivments last">
-                        <input class="form-feedback__checkbox visually-hidden" type="checkbox" name="rocks" id="rocks" checked>
+                        <input class="form-feedback__checkbox hidden" type="checkbox" name="rocks" id="rocks" checked>
                         <label class="form-feedback__label-checkbox" for="rocks">Красные скалы</label>
                         </li>
                   </ul>
@@ -115,7 +119,7 @@
                   <textarea class="form-feedback__textarea form-feedback__input-text" name="emotions" id="emotions" cols="20" rows="4" placeholder="Опишите подробно все свои восторги"></textarea>
                   </div>
                   <div class="form-feedback__submit-wrapper">
-                  <button class="button form-feedback__button" type="submit"><span class="button-text">Отправить отзыв</span></button>
+                  <button class="form-feedback__button" type="submit"><span class="form-feedback__button--text">Отправить отзыв</span></button>
                   <p class="form-feedback__notification">* — обязательные поля</p>
                   </div>
             </form>

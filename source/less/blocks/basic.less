@@ -6,6 +6,7 @@
   max-width: 1200px;
   background-color: @white;
   font-family: "PT Sans", "Arial", sans-serif;
+  box-shadow: 0 2px 15px 0 rgba(0, 0, 0, 0.2);
 }
 
 .page-body {
@@ -68,5 +69,25 @@
 
   @media @desktop {
     display: inline;
+  }
+}
+
+.container::-webkit-scrollbar {
+  width: 0;
+}
+
+.hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
+
+.book__word-wrap {
+  display: none;
+
+  @media @tablet {
+    display: block;
   }
 }

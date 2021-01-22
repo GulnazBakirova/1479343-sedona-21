@@ -1,0 +1,48 @@
+.gallery__item {
+  width: 320px;
+  margin: 0 auto;
+  padding-top: 22px;
+  border-top: 1px solid gray;
+
+  &:last-child {
+    border-bottom: 1px solid gray;
+  }
+
+  @media @tablet {
+    width: 324px;
+    margin: 0;
+    border: none;
+    padding-top: 0;
+
+    &:last-child {
+      border: none;
+    }
+
+    &--landscape {
+      width: 100%;
+    }
+  }
+
+  @media @desktop {
+    position: relative;
+    width: 400px;
+
+    &--landscape {
+      width: 100%;
+    }
+  }
+}
+
+.gallery {
+  margin: 0 auto;
+
+  @media @tablet {
+    display: flex;
+    flex-wrap: wrap;
+    width: 648px;
+  }
+
+  @media @desktop {
+    width: 1200px;
+  }
+}

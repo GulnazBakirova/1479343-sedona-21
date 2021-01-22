@@ -1,0 +1,77 @@
+.likes {
+  display: flex;
+  width: 70px;
+  justify-content: space-between;
+  align-items: center;
+
+  &--first {
+    margin-left: -20px;
+    margin-top: 12px;
+
+    @media @tablet {
+      margin-top: 5px;
+    }
+
+    @media @desktop {
+      margin-right: 20px;
+    }
+  }
+
+  &--second {
+    margin-left: -20px;
+    margin-top: 12px;
+
+    @media @tablet {
+      margin-top: 3px;
+    }
+
+    @media @desktop {
+      margin-right: 35px;
+    }
+  }
+
+  &--third {
+    margin-left: -20px;
+    margin-top: 12px;
+
+    @media @tablet {
+      margin-top: 1px;
+    }
+
+    @media @desktop {
+      margin-right: 35px;
+    }
+  }
+
+  &--fourth {
+    margin-left: -20px;
+    margin-top: 12px;
+
+    @media @tablet {
+      margin-top: 1px;
+    }
+
+    @media @desktop {
+      margin-right: 35px;
+    }
+  }
+}
+
+.likes__like-button {
+  padding: 0;
+  background: none;
+  border: transparent;
+  cursor: pointer;
+  fill: @black;
+
+  @media @desktop {
+    fill: @white;
+    background-color: transparent;
+  }
+}
+
+.likes__count {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 24px;
+}
