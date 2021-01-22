@@ -1,0 +1,147 @@
+.site-list {
+  display: flex;
+  flex-direction: column;
+  background-color: @blue;
+
+  @media @tablet {
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: @white;
+  }
+
+  @media @desktop {
+    color: @black;
+    background-color: @white;
+  }
+}
+
+.site-list__item .site-list__link {
+  text-decoration: none;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 40px;
+  color: @white;
+
+  @media @tablet {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    color: @black;
+  }
+
+  @media @desktop {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    color: @black;
+  }
+}
+
+.site-list__item {
+  border-bottom: 1px solid @white;
+  color: @white;
+  text-align: center;
+  background-color: @blue;
+
+  &:not(&--active):hover {
+    background-color: @blue-hover;
+  }
+
+  &:not(&--active):active {
+    color: fade(@white, 30%);
+    background-color: @blue;
+  }
+
+  &--active {
+    color: fade(@white, 60%);
+  }
+
+  @media @tablet {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 26px;
+    box-sizing: border-box;
+    width: 25%;
+    color: @black;
+    background-color: @white;
+    border: none;
+
+    &:not(&--active):hover {
+      background-color: @white;
+      border: none;
+    }
+
+    &:not(&--active):active {
+      color: inherit;
+      background-color: @white;
+      border: none;
+    }
+  }
+
+  @media @desktop {
+    padding-top: 8px;
+    margin-bottom: 10px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 26px;
+    box-sizing: border-box;
+    width: 25%;
+    color: @black;
+    background-color: @white;
+  }
+}
+
+.site-list__link {
+  display: block;
+  padding: 8px 20px 7px;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 40px;
+
+  @media @tablet {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 26px;
+  }
+
+  @media @desktop {
+    font-style: normal;
+    font-weight: bold;
+    margin-top: -8px;
+    margin-bottom: -10px;
+    font-size: 14px;
+    line-height: 26px;
+  }
+}
+
+.site-list__link:last-child .site-list__link {
+  box-shadow: 0 -7px 7px -7px fade(@black, 20%) inset;
+
+  @media @tablet {
+    box-shadow: none;
+  }
+}
+
+li.site-list__item.left {
+  @media @tablet {
+    text-align: left;
+  }
+
+  @media @desktop {
+    text-align: left;
+  }
+}
+
+li.site-list__item.right {
+  @media @tablet {
+    text-align: right;
+  }
+
+  @media @desktop {
+    text-align: right;
+  }
+}

@@ -47,7 +47,6 @@
   color: @black;
 }
 
-
 .form-feedback__button {
   display: block;
   box-sizing: border-box;
@@ -201,10 +200,14 @@
 
     @media @tablet {
       order: 4;
-      padding-top: 58px;
       padding-bottom: 11px;
       width: 100%;
       min-height: 194px;
+      padding-top: 0;
+    }
+
+    @media @desktop {
+      padding-top: 0;
     }
   }
 }
@@ -235,18 +238,18 @@
   }
 
   &--impression {
-    font-style: normal;
-    font-weight: bold;
-    font-size: 18px;
-    line-height: 26px;
-    text-transform: uppercase;
-
     @media @tablet {
       text-align: left;
     }
 
     @media @desktop {
       padding-left: 80px;
+    }
+  }
+
+  &--contacts {
+    @media @tablet {
+      white-space: nowrap;
     }
   }
 }
@@ -262,6 +265,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    font-size: 21px;
   }
 
   &::before,
@@ -516,7 +520,6 @@
   outline-offset: 2px;
 }
 
-
 .form-feedback__label-radio {
   font-style: normal;
   font-weight: bold;
@@ -598,6 +601,11 @@
     padding-top: 12px;
     padding-bottom: 12px;
     min-height: 160px;
+    margin-top: 55px;
+
+    @media @desktop {
+      margin-top: 55px;
+    }
   }
 }
 
@@ -628,7 +636,7 @@
   }
 }
 
-.form-feedback__button--text,
+.form-feedback__button-text,
 .form-feedback__button {
   text-transform: uppercase;
 }

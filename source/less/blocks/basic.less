@@ -92,10 +92,14 @@
   }
 }
 
-.hidden-br {
-  display: none;
+.text {
+  &:not(&--active):hover {
+    @media @tablet {
+      color: @blue;
+    }
 
-  @media @tablet {
-    display: none;
+    @media @desktop {
+      color: @blue;
+    }
   }
 }
