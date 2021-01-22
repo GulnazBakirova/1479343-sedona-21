@@ -1,0 +1,52 @@
+.house {
+  @media @tablet {
+    order: 1;
+  }
+
+  @media @desktop {
+    order: 1;
+  }
+}
+
+.house__img,
+.souvenir__img,
+.food__img {
+  @media @mobile {
+    display: inline-block;
+    margin-right: 260px;
+  }
+
+  @media @tablet {
+    margin-right: 0;
+  }
+
+  @media @desktop {
+    margin-right: 0;
+  }
+}
+
+.house__img--icon {
+  @media @tablet {
+    width: 75px;
+    height: 72px;
+  }
+
+  @media @desktop {
+    width: 75px;
+    height: 72px;
+  }
+}
+
+.house__img {
+  margin-top: 1px;
+
+  @media @tablet {
+    margin-top: 35px;
+    margin-left: -35px;
+  }
+
+  @media @desktop {
+    margin-top: 35px;
+    margin-left: -55px;
+  }
+}
